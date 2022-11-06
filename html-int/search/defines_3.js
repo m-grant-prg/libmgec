@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['end_5fc_5fdecls_261',['END_C_DECLS',['../mge-portability_8h.html#ac17320fed4b28122bc4977a087b131dd',1,'mge-portability.h']]]
+  ['def_5fbuf_5fsize_270',['DEF_BUF_SIZE',['../buf-msg_2internal_8h.html#afaf870b3cd0c265f7222b27871894a7c',1,'internal.h']]],
+  ['def_5fmsg_5fsize_271',['DEF_MSG_SIZE',['../buf-msg_2internal_8h.html#a433228a91a08544329fbdb9127073790',1,'internal.h']]]
 ];

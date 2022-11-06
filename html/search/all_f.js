@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['overview_106',['Overview',['../index.html',1,'']]],
-  ['object_107',['object',['../structdllistnode.html#a077376d12464f945e2414d5499c79b3f',1,'dllistnode::object()'],['../structbstreenode.html#a077376d12464f945e2414d5499c79b3f',1,'bstreenode::object()'],['../structsllistnode.html#a077376d12464f945e2414d5499c79b3f',1,'sllistnode::object()']]]
+  ['next_96',['next',['../structsllistnode.html#a700fc56f215d3482e760ff98df3d5091',1,'sllistnode']]],
+  ['next_5ffree_97',['next_free',['../structmgebuffer.html#a09030d4b2dfb90b264a8be3b93659920',1,'mgebuffer::next_free()'],['../structmgemessage.html#a09030d4b2dfb90b264a8be3b93659920',1,'mgemessage::next_free()']]],
+  ['nextnode_98',['nextnode',['../structdllistnode.html#af7fc1f9f814200e46f63c2dc78476043',1,'dllistnode']]],
+  ['node_5ftotal_99',['node_total',['../structbstree.html#a215aa978cf35bba1b267863484c9b026',1,'bstree']]]
 ];

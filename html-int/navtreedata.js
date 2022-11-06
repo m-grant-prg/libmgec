@@ -24,30 +24,6 @@ var NAVTREE =
 [
   [ "MGE General C Library - Full Internal Documentation", "index.html", [
     [ "Overview", "index.html", null ],
-    [ "AutoTools", "md_docs_doxygen_src_150-autotools-internal.html", [
-      [ "Overview", "md_docs_doxygen_src_150-autotools-internal.html#overview", null ],
-      [ "Bootstrapping The Project", "md_docs_doxygen_src_150-autotools-internal.html#bootstrapping", null ],
-      [ "gnulib", "md_docs_doxygen_src_150-autotools-internal.html#gnulib", null ],
-      [ "Temporary Headers and Libraries", "md_docs_doxygen_src_150-autotools-internal.html#temporaries", [
-        [ "Concept", "md_docs_doxygen_src_150-autotools-internal.html#concept", null ],
-        [ "Header Components", "md_docs_doxygen_src_150-autotools-internal.html#header_components", [
-          [ "Header Directory Structure", "md_docs_doxygen_src_150-autotools-internal.html#header_directory_structure", null ],
-          [ "Header Build", "md_docs_doxygen_src_150-autotools-internal.html#header_build", null ],
-          [ "Header Consumption", "md_docs_doxygen_src_150-autotools-internal.html#header_consumption", null ]
-        ] ],
-        [ "Library Components", "md_docs_doxygen_src_150-autotools-internal.html#library_components", [
-          [ "Library Directory Structure", "md_docs_doxygen_src_150-autotools-internal.html#library_directory_structure", null ],
-          [ "Library Build", "md_docs_doxygen_src_150-autotools-internal.html#library_buid", null ],
-          [ "Library Consumption", "md_docs_doxygen_src_150-autotools-internal.html#library_consumption", null ],
-          [ "Linking Verification", "md_docs_doxygen_src_150-autotools-internal.html#linking_verification", null ]
-        ] ]
-      ] ],
-      [ "Linking Internal Libraries", "md_docs_doxygen_src_150-autotools-internal.html#linking_internal_libraries", null ],
-      [ "Installation Considerations", "md_docs_doxygen_src_150-autotools-internal.html#nstallation_condiderations", [
-        [ "Making Libraries Available", "md_docs_doxygen_src_150-autotools-internal.html#ldconfig", null ],
-        [ "doc-base Documentation", "md_docs_doxygen_src_150-autotools-internal.html#doc_base", null ]
-      ] ]
-    ] ],
     [ "Errors", "md_docs_doxygen_src_300-errors.html", [
       [ "Messages", "md_docs_doxygen_src_300-errors.html#errormsgs", null ],
       [ "Usage", "md_docs_doxygen_src_300-errors.html#errorusage", null ],
@@ -60,6 +36,7 @@ var NAVTREE =
       [ "mg_realloc", "md_docs_doxygen_src_500-memory.html#mgrealloc", null ]
     ] ],
     [ "Message Buffers and Messages", "md_docs_doxygen_src_buf-msg_200-buf-msg.html", [
+      [ "Overview", "md_docs_doxygen_src_buf-msg_200-buf-msg.html#overview", null ],
       [ "Buffers", "md_docs_doxygen_src_buf-msg_200-buf-msg.html#buf", [
         [ "concat_buf()", "md_docs_doxygen_src_buf-msg_200-buf-msg.html#concatbuf", null ],
         [ "trim_buf()", "md_docs_doxygen_src_buf-msg_200-buf-msg.html#trimbuf", null ]
@@ -95,7 +72,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"annotated.html"
+"annotated.html",
+"version_8c.html#adb87a76221ef78d974c9c89cf1bfa7f4"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

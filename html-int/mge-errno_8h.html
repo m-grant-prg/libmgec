@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MGE General C Library - Full Internal Documentation: src/prg/c/inc/libmgec/mge-errno.h File Reference</title>
+<title>MGE General C Library - Full Internal Documentation: src/prg/c/inc/mge-errno.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MGE General C Library - Full Internal Documentation
-   &#160;<span id="projectnumber">v1.7.2</span>
+   &#160;<span id="projectnumber">v1.6.5+rc1</span>
    </div>
    <div id="projectbrief">Library of general C functions.</div>
   </td>
@@ -92,31 +92,31 @@ $(document).ready(function(){initNavTree('mge-errno_8h.html',''); initResizable(
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;sys/types.h&gt;</code><br />
-<code>#include &lt;<a class="el" href="mge-portability_8h_source.html">libmgec/mge-portability.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="portability_8h_source.html">portability.h</a>&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for mge-errno.h:</div>
 <div class="dyncontent">
-<div class="center"><img src="mge-errno_8h__incl.png" border="0" usemap="#src_2prg_2c_2inc_2libmgec_2mge-errno_8h" alt=""/></div>
-<map name="src_2prg_2c_2inc_2libmgec_2mge-errno_8h" id="src_2prg_2c_2inc_2libmgec_2mge-errno_8h">
-<area shape="rect" title=" " alt="" coords="58,5,214,47"/>
-<area shape="rect" title=" " alt="" coords="5,95,101,121"/>
-<area shape="rect" href="mge-portability_8h.html" title=" " alt="" coords="125,95,315,121"/>
+<div class="center"><img src="mge-errno_8h__incl.png" border="0" usemap="#src_2prg_2c_2inc_2mge-errno_8h" alt=""/></div>
+<map name="src_2prg_2c_2inc_2mge-errno_8h" id="src_2prg_2c_2inc_2mge-errno_8h">
+<area shape="rect" title=" " alt="" coords="21,5,205,32"/>
+<area shape="rect" title=" " alt="" coords="5,80,101,107"/>
+<area shape="rect" href="portability_8h.html" title=" " alt="" coords="125,80,224,107"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><img src="mge-errno_8h__dep__incl.png" border="0" usemap="#src_2prg_2c_2inc_2libmgec_2mge-errno_8hdep" alt=""/></div>
-<map name="src_2prg_2c_2inc_2libmgec_2mge-errno_8hdep" id="src_2prg_2c_2inc_2libmgec_2mge-errno_8hdep">
-<area shape="rect" title=" " alt="" coords="637,5,793,47"/>
-<area shape="rect" href="buffer_8c.html" title=" " alt="" coords="5,95,161,136"/>
-<area shape="rect" href="message_8c.html" title=" " alt="" coords="185,95,341,136"/>
-<area shape="rect" href="errno_8c.html" title=" " alt="" coords="365,95,521,136"/>
-<area shape="rect" href="error_8c.html" title=" " alt="" coords="545,95,701,136"/>
-<area shape="rect" href="bstree_8c.html" title=" " alt="" coords="726,95,891,136"/>
-<area shape="rect" href="dllist_8c.html" title=" " alt="" coords="916,95,1072,136"/>
-<area shape="rect" href="sllist_8c.html" title=" " alt="" coords="1096,95,1252,136"/>
-<area shape="rect" href="memory_8c.html" title=" " alt="" coords="1276,95,1432,136"/>
+<div class="center"><img src="mge-errno_8h__dep__incl.png" border="0" usemap="#src_2prg_2c_2inc_2mge-errno_8hdep" alt=""/></div>
+<map name="src_2prg_2c_2inc_2mge-errno_8hdep" id="src_2prg_2c_2inc_2mge-errno_8hdep">
+<area shape="rect" title=" " alt="" coords="623,5,807,32"/>
+<area shape="rect" href="buffer_8c.html" title=" " alt="" coords="5,80,161,121"/>
+<area shape="rect" href="message_8c.html" title=" " alt="" coords="185,80,341,121"/>
+<area shape="rect" href="errno_8c.html" title=" " alt="" coords="365,80,521,121"/>
+<area shape="rect" href="error_8c.html" title=" " alt="" coords="545,80,701,121"/>
+<area shape="rect" href="bstree_8c.html" title=" " alt="" coords="726,80,891,121"/>
+<area shape="rect" href="dllist_8c.html" title=" " alt="" coords="916,80,1072,121"/>
+<area shape="rect" href="sllist_8c.html" title=" " alt="" coords="1096,80,1252,121"/>
+<area shape="rect" href="memory_8c.html" title=" " alt="" coords="1276,80,1432,121"/>
 </map>
 </div>
 </div>
@@ -178,7 +178,7 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a4a252afc0f63a2e93041fac39048678a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="mge-portability_8h.html#a0c2d4d01206892eecb3fd695f45dec2d">BEGIN_C_DECLS</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mge-errno_8h.html#a4a252afc0f63a2e93041fac39048678a">mge_errno</a></td></tr>
+<tr class="memitem:a4a252afc0f63a2e93041fac39048678a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="portability_8h.html#a0c2d4d01206892eecb3fd695f45dec2d">BEGIN_C_DECLS</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mge-errno_8h.html#a4a252afc0f63a2e93041fac39048678a">mge_errno</a></td></tr>
 <tr class="memdesc:a4a252afc0f63a2e93041fac39048678a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Error number.  <a href="mge-errno_8h.html#a4a252afc0f63a2e93041fac39048678a">More...</a><br /></td></tr>
 <tr class="separator:a4a252afc0f63a2e93041fac39048678a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca21acb62828e1585d26cd8fe9ea3f56"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mge-errno_8h.html#aca21acb62828e1585d26cd8fe9ea3f56">sav_errno</a></td></tr>
@@ -191,7 +191,7 @@ Variables</h2></td></tr>
 <dl class="section author"><dt>Author</dt><dd>Copyright (C) 2017-2022 Mark Grant</dd></dl>
 <p>Released under the GPLv3 only.<br  />
 SPDX-License-Identifier: GPL-3.0-only</p>
-<dl class="section version"><dt>Version</dt><dd><em>v1.0.15 ==== 16/09/2022</em> </dd></dl>
+<dl class="section version"><dt>Version</dt><dd><em>v1.0.14 ==== 14/04/2022</em> </dd></dl>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a90defc9e20a7fc7995b6144cdd3caf77"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a90defc9e20a7fc7995b6144cdd3caf77">&#9670;&nbsp;</a></span>MGE_CLIENT_BLOCKED</h2>
@@ -469,7 +469,7 @@ SPDX-License-Identifier: GPL-3.0-only</p>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="mge-portability_8h.html#a0c2d4d01206892eecb3fd695f45dec2d">BEGIN_C_DECLS</a> int mge_errno</td>
+          <td class="memname"><a class="el" href="portability_8h.html#a0c2d4d01206892eecb3fd695f45dec2d">BEGIN_C_DECLS</a> int mge_errno</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -499,7 +499,7 @@ SPDX-License-Identifier: GPL-3.0-only</p>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_a1986ada3285f0a0ebcb94921d9f60ef.html">prg</a></li><li class="navelem"><a class="el" href="dir_088b4e4436e06887f3fa9c5a3af9d85c.html">c</a></li><li class="navelem"><a class="el" href="dir_aba9309797a73b547f3d5132b7fc17af.html">inc</a></li><li class="navelem"><a class="el" href="dir_5900b9a12101fec82694542326e6190e.html">libmgec</a></li><li class="navelem"><a class="el" href="mge-errno_8h.html">mge-errno.h</a></li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_a1986ada3285f0a0ebcb94921d9f60ef.html">prg</a></li><li class="navelem"><a class="el" href="dir_088b4e4436e06887f3fa9c5a3af9d85c.html">c</a></li><li class="navelem"><a class="el" href="dir_aba9309797a73b547f3d5132b7fc17af.html">inc</a></li><li class="navelem"><a class="el" href="mge-errno_8h.html">mge-errno.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

@@ -1,5 +1,9 @@
 var searchData=
 [
-  ['terminator_123',['terminator',['../structmgemessage.html#a3532877d52a58d2bfeec4ce963f086a1',1,'mgemessage']]],
-  ['trim_5fbuf_124',['trim_buf',['../mge-buffer_8h.html#adb167a2d1c26596ae70f35c495cf5286',1,'trim_buf(struct mgebuffer *msg_buf):&#160;buffer.c'],['../buffer_8c.html#a39df69216e9e8bf96ab185e3b2d85090',1,'trim_buf(struct mgebuffer *m_buf):&#160;buffer.c']]]
+  ['sav_5ferrno_112',['sav_errno',['../mge-errno_8h.html#aca21acb62828e1585d26cd8fe9ea3f56',1,'sav_errno():&#160;errno.c'],['../errno_8c.html#aca21acb62828e1585d26cd8fe9ea3f56',1,'sav_errno():&#160;errno.c']]],
+  ['separator_113',['separator',['../structmgemessage.html#a6989953791434c8ea982054551c9e154',1,'mgemessage']]],
+  ['size_114',['size',['../structmgebuffer.html#a854352f53b148adc24983a58a1866d66',1,'mgebuffer::size()'],['../structmgemessage.html#a854352f53b148adc24983a58a1866d66',1,'mgemessage::size()']]],
+  ['sllist_2ec_115',['sllist.c',['../sllist_8c.html',1,'']]],
+  ['sllist_2eh_116',['sllist.h',['../sllist_8h.html',1,'']]],
+  ['sllistnode_117',['sllistnode',['../structsllistnode.html',1,'']]]
 ];
