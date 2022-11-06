@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MGE General C Library - Full Internal Documentation
-   &#160;<span id="projectnumber">v1.6.5+rc1</span>
+   &#160;<span id="projectnumber">v1.6.4+rc2</span>
    </div>
    <div id="projectbrief">Library of general C functions.</div>
   </td>
@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('structbstree.html',''); initResizable(
 <p>Binary search tree.  
  <a href="structbstree.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="bstree_8h_source.html">bstree.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="mge-bstree_8h_source.html">mge-bstree.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for bstree:</div>
 <div class="dyncontent">
@@ -138,6 +138,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Comparison function. </p>
+<p>This function must have the same signature as strcmp() allbeit with void parameters. </p>
 
 </div>
 </div>
@@ -202,11 +203,12 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Uniqueness of nodes. </p>
+<p>Should be either BST_NODES_UNIQUE or BST_NODES_DUPLICATES. </p>
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>src/prg/c/inc/<a class="el" href="bstree_8h_source.html">bstree.h</a></li>
+<li>src/prg/c/inc/libmgec/<a class="el" href="mge-bstree_8h_source.html">mge-bstree.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

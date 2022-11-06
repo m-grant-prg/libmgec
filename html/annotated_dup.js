@@ -1,6 +1,5 @@
 var annotated_dup =
 [
-    [ "bstobjcoord", "structbstobjcoord.html", "structbstobjcoord" ],
     [ "bstree", "structbstree.html", "structbstree" ],
     [ "bstreenode", "structbstreenode.html", "structbstreenode" ],
     [ "dllistnode", "structdllistnode.html", "structdllistnode" ],

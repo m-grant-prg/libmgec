@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MGE General C Library - Full Internal Documentation
-   &#160;<span id="projectnumber">v1.6.5+rc1</span>
+   &#160;<span id="projectnumber">v1.6.4+rc2</span>
    </div>
    <div id="projectbrief">Library of general C functions.</div>
   </td>
@@ -93,9 +93,9 @@ $(document).ready(function(){initNavTree('bstree_8c.html',''); initResizable(); 
 <code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &lt;stdlib.h&gt;</code><br />
 <code>#include &lt;string.h&gt;</code><br />
-<code>#include &quot;<a class="el" href="bstree-internal_8h_source.html">bstree-internal.h</a>&quot;</code><br />
-<code>#include &lt;<a class="el" href="bstree_8h_source.html">bstree.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="mge-errno_8h_source.html">mge-errno.h</a>&gt;</code><br />
+<code>#include &quot;<a class="el" href="listsandsorts_2internal_8h_source.html">internal.h</a>&quot;</code><br />
+<code>#include &lt;<a class="el" href="mge-bstree_8h_source.html">libmgec/mge-bstree.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="mge-errno_8h_source.html">libmgec/mge-errno.h</a>&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for bstree.c:</div>
 <div class="dyncontent">
@@ -106,76 +106,77 @@ Include dependency graph for bstree.c:</div>
 <area shape="rect" title=" " alt="" coords="98,95,165,121"/>
 <area shape="rect" title=" " alt="" coords="189,95,260,121"/>
 <area shape="rect" title=" " alt="" coords="284,95,355,121"/>
-<area shape="rect" href="bstree-internal_8h.html" title=" " alt="" coords="379,95,510,121"/>
-<area shape="rect" href="bstree_8h.html" title=" " alt="" coords="482,169,557,196"/>
-<area shape="rect" href="mge-errno_8h.html" title=" " alt="" coords="585,95,688,121"/>
-<area shape="rect" href="portability_8h.html" title=" " alt="" coords="470,244,569,271"/>
-<area shape="rect" title=" " alt="" coords="631,169,727,196"/>
+<area shape="rect" href="listsandsorts_2internal_8h.html" title=" " alt="" coords="379,95,463,121"/>
+<area shape="rect" href="mge-bstree_8h.html" title=" " alt="" coords="418,169,583,196"/>
+<area shape="rect" href="mge-errno_8h.html" title=" " alt="" coords="541,95,700,121"/>
+<area shape="rect" href="mge-portability_8h.html" title=" " alt="" coords="406,244,595,271"/>
+<area shape="rect" title=" " alt="" coords="301,244,375,271"/>
+<area shape="rect" title=" " alt="" coords="658,169,754,196"/>
 </map>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a11e4ed12cd1b235985f1fc426f4fa157"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="structbstreenode.html">bstreenode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bstree_8c.html#a11e4ed12cd1b235985f1fc426f4fa157">add_node</a> (struct <a class="el" href="structbstreenode.html">bstreenode</a> *currentnode, const void *object, size_t objsize, struct <a class="el" href="structbstree.html">bstree</a> *tree)</td></tr>
+<tr class="memdesc:a11e4ed12cd1b235985f1fc426f4fa157"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a binary search tree node with data of 'object' and using object comparison function of 'comp'.  <a href="bstree_8c.html#a11e4ed12cd1b235985f1fc426f4fa157">More...</a><br /></td></tr>
+<tr class="separator:a11e4ed12cd1b235985f1fc426f4fa157"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af091240b9d0a55b13fb9600a13cda11d"><td class="memItemLeft" align="right" valign="top">static void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bstree_8c.html#af091240b9d0a55b13fb9600a13cda11d">find_node</a> (const struct <a class="el" href="structbstreenode.html">bstreenode</a> *currentnode, const void *searchobj, int(*comp)(const void *, const void *))</td></tr>
+<tr class="memdesc:af091240b9d0a55b13fb9600a13cda11d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find exact object match.  <a href="bstree_8c.html#af091240b9d0a55b13fb9600a13cda11d">More...</a><br /></td></tr>
+<tr class="separator:af091240b9d0a55b13fb9600a13cda11d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2dccb5e0dd54fd2d7c3bcbd7ac578a98"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bstree_8c.html#a2dccb5e0dd54fd2d7c3bcbd7ac578a98">get_counter_node</a> (const struct <a class="el" href="structbstreenode.html">bstreenode</a> *currentnode, const void *searchobj, int(*comp)(const void *, const void *))</td></tr>
+<tr class="memdesc:a2dccb5e0dd54fd2d7c3bcbd7ac578a98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find exact object match.  <a href="bstree_8c.html#a2dccb5e0dd54fd2d7c3bcbd7ac578a98">More...</a><br /></td></tr>
+<tr class="separator:a2dccb5e0dd54fd2d7c3bcbd7ac578a98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0188c44186fe0c74bdb8e8d76320a391"><td class="memItemLeft" align="right" valign="top">static void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bstree_8c.html#a0188c44186fe0c74bdb8e8d76320a391">find_next_node</a> (const struct <a class="el" href="structbstreenode.html">bstreenode</a> *currentnode, const void *searchobj, int(*comp)(const void *, const void *))</td></tr>
+<tr class="memdesc:a0188c44186fe0c74bdb8e8d76320a391"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find and return the next object.  <a href="bstree_8c.html#a0188c44186fe0c74bdb8e8d76320a391">More...</a><br /></td></tr>
+<tr class="separator:a0188c44186fe0c74bdb8e8d76320a391"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba0fe5c8fcf56007f437272a5d2964b2"><td class="memItemLeft" align="right" valign="top">static void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bstree_8c.html#aba0fe5c8fcf56007f437272a5d2964b2">find_prev_node</a> (const struct <a class="el" href="structbstreenode.html">bstreenode</a> *currentnode, const void *searchobj, int(*comp)(const void *, const void *))</td></tr>
+<tr class="memdesc:aba0fe5c8fcf56007f437272a5d2964b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find and return the previous object.  <a href="bstree_8c.html#aba0fe5c8fcf56007f437272a5d2964b2">More...</a><br /></td></tr>
+<tr class="separator:aba0fe5c8fcf56007f437272a5d2964b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9caaf6a9e36ab5af07e9c46b632a43c0"><td class="memItemLeft" align="right" valign="top">static void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bstree_8c.html#a9caaf6a9e36ab5af07e9c46b632a43c0">upd_node</a> (struct <a class="el" href="structbstreenode.html">bstreenode</a> *currentnode, const void *updobj, size_t objsize, int(*comp)(const void *, const void *))</td></tr>
+<tr class="memdesc:a9caaf6a9e36ab5af07e9c46b632a43c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the object.  <a href="bstree_8c.html#a9caaf6a9e36ab5af07e9c46b632a43c0">More...</a><br /></td></tr>
+<tr class="separator:a9caaf6a9e36ab5af07e9c46b632a43c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad28df34dcb13229f2c86e770859b3337"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="structbstreenode.html">bstreenode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bstree_8c.html#ad28df34dcb13229f2c86e770859b3337">del_node</a> (struct <a class="el" href="structbstreenode.html">bstreenode</a> *currentnode, const void *searchobj, struct <a class="el" href="structbstree.html">bstree</a> *tree)</td></tr>
+<tr class="memdesc:ad28df34dcb13229f2c86e770859b3337"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete node.  <a href="bstree_8c.html#ad28df34dcb13229f2c86e770859b3337">More...</a><br /></td></tr>
+<tr class="separator:ad28df34dcb13229f2c86e770859b3337"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad21788f61b527b070296483cdf22b253"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="structbstreenode.html">bstreenode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bstree_8c.html#ad21788f61b527b070296483cdf22b253">free_bstree</a> (struct <a class="el" href="structbstreenode.html">bstreenode</a> *currentnode)</td></tr>
+<tr class="memdesc:ad21788f61b527b070296483cdf22b253"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free memory allocated to the bstree.  <a href="bstree_8c.html#ad21788f61b527b070296483cdf22b253">More...</a><br /></td></tr>
+<tr class="separator:ad21788f61b527b070296483cdf22b253"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6b05bf3e1913d9018a39ac1c137f8b7"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="structbstreenode.html">bstreenode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bstree_8c.html#ad6b05bf3e1913d9018a39ac1c137f8b7">free_bst_node</a> (struct <a class="el" href="structbstreenode.html">bstreenode</a> *currentnode)</td></tr>
+<tr class="memdesc:ad6b05bf3e1913d9018a39ac1c137f8b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free memory allocated to the node.  <a href="bstree_8c.html#ad6b05bf3e1913d9018a39ac1c137f8b7">More...</a><br /></td></tr>
+<tr class="separator:ad6b05bf3e1913d9018a39ac1c137f8b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7393e2c1af4a4b374977b309f799a201"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="structbstobjcoord.html">bstobjcoord</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bstree_8c.html#a7393e2c1af4a4b374977b309f799a201">find_next_node_trace</a> (const struct <a class="el" href="structbstreenode.html">bstreenode</a> *currentnode, struct <a class="el" href="structbstobjcoord.html">bstobjcoord</a> *searchobj, int(*comp)(const void *, const void *))</td></tr>
+<tr class="memdesc:a7393e2c1af4a4b374977b309f799a201"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find and return the next object and it's coordinates.  <a href="bstree_8c.html#a7393e2c1af4a4b374977b309f799a201">More...</a><br /></td></tr>
+<tr class="separator:a7393e2c1af4a4b374977b309f799a201"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99224174bcdfc8d39c7a3aa23d0acf5e"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structbstree.html">bstree</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bstree_8c.html#a99224174bcdfc8d39c7a3aa23d0acf5e">cre_bst</a> (int unique, int(*comp)(const void *, const void *))</td></tr>
 <tr class="memdesc:a99224174bcdfc8d39c7a3aa23d0acf5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a binary search tree.  <a href="bstree_8c.html#a99224174bcdfc8d39c7a3aa23d0acf5e">More...</a><br /></td></tr>
 <tr class="separator:a99224174bcdfc8d39c7a3aa23d0acf5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a0ae362f96ff51f60a04ae54560501f"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structbstree.html">bstree</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bstree_8c.html#a8a0ae362f96ff51f60a04ae54560501f">add_bst_node</a> (struct <a class="el" href="structbstree.html">bstree</a> *tree, const void *object, size_t objsize)</td></tr>
 <tr class="memdesc:a8a0ae362f96ff51f60a04ae54560501f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a node to a binary search tree.  <a href="bstree_8c.html#a8a0ae362f96ff51f60a04ae54560501f">More...</a><br /></td></tr>
 <tr class="separator:a8a0ae362f96ff51f60a04ae54560501f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c8949532ee0169a9faf7a1caf20f062"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="structbstreenode.html">bstreenode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bstree_8c.html#a1c8949532ee0169a9faf7a1caf20f062">add_node</a> (struct <a class="el" href="structbstreenode.html">bstreenode</a> *currentnode, const void *object, size_t objsize, struct <a class="el" href="structbstree.html">bstree</a> *tree)</td></tr>
-<tr class="memdesc:a1c8949532ee0169a9faf7a1caf20f062"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a binary search tree node with data of 'object' and using object comparison function of 'comp'.  <a href="bstree_8c.html#a1c8949532ee0169a9faf7a1caf20f062">More...</a><br /></td></tr>
-<tr class="separator:a1c8949532ee0169a9faf7a1caf20f062"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a486be2ec0744640dcabe6323304db158"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bstree_8c.html#a486be2ec0744640dcabe6323304db158">find_bst_node</a> (const struct <a class="el" href="structbstree.html">bstree</a> *tree, const void *searchobj)</td></tr>
 <tr class="memdesc:a486be2ec0744640dcabe6323304db158"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find an exact object match.  <a href="bstree_8c.html#a486be2ec0744640dcabe6323304db158">More...</a><br /></td></tr>
 <tr class="separator:a486be2ec0744640dcabe6323304db158"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2843b85cedbb59a9519de38c4d26890c"><td class="memItemLeft" align="right" valign="top">static void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bstree_8c.html#a2843b85cedbb59a9519de38c4d26890c">find_node</a> (const struct <a class="el" href="structbstreenode.html">bstreenode</a> *currentnode, const void *searchobj, int(*comp)(const void *, const void *))</td></tr>
-<tr class="memdesc:a2843b85cedbb59a9519de38c4d26890c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find exact object match.  <a href="bstree_8c.html#a2843b85cedbb59a9519de38c4d26890c">More...</a><br /></td></tr>
-<tr class="separator:a2843b85cedbb59a9519de38c4d26890c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d2ac28c952d279d698a012a372ac99e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bstree_8c.html#a5d2ac28c952d279d698a012a372ac99e">get_counter_bst_node</a> (const struct <a class="el" href="structbstree.html">bstree</a> *tree, const void *searchobj)</td></tr>
 <tr class="memdesc:a5d2ac28c952d279d698a012a372ac99e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the counter for a node.  <a href="bstree_8c.html#a5d2ac28c952d279d698a012a372ac99e">More...</a><br /></td></tr>
 <tr class="separator:a5d2ac28c952d279d698a012a372ac99e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2dccb5e0dd54fd2d7c3bcbd7ac578a98"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bstree_8c.html#a2dccb5e0dd54fd2d7c3bcbd7ac578a98">get_counter_node</a> (const struct <a class="el" href="structbstreenode.html">bstreenode</a> *currentnode, const void *searchobj, int(*comp)(const void *, const void *))</td></tr>
-<tr class="memdesc:a2dccb5e0dd54fd2d7c3bcbd7ac578a98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find exact object match.  <a href="bstree_8c.html#a2dccb5e0dd54fd2d7c3bcbd7ac578a98">More...</a><br /></td></tr>
-<tr class="separator:a2dccb5e0dd54fd2d7c3bcbd7ac578a98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b5f206d0d1a1681835b3f7bfbf0f431"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bstree_8c.html#a1b5f206d0d1a1681835b3f7bfbf0f431">find_next_bst_node</a> (const struct <a class="el" href="structbstree.html">bstree</a> *tree, const void *searchobj)</td></tr>
 <tr class="memdesc:a1b5f206d0d1a1681835b3f7bfbf0f431"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the next node.  <a href="bstree_8c.html#a1b5f206d0d1a1681835b3f7bfbf0f431">More...</a><br /></td></tr>
 <tr class="separator:a1b5f206d0d1a1681835b3f7bfbf0f431"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af684a6b91402abc2f0aafadd8ac8ed0b"><td class="memItemLeft" align="right" valign="top">static void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bstree_8c.html#af684a6b91402abc2f0aafadd8ac8ed0b">find_next_node</a> (const struct <a class="el" href="structbstreenode.html">bstreenode</a> *currentnode, const void *searchobj, int(*comp)(const void *, const void *))</td></tr>
-<tr class="memdesc:af684a6b91402abc2f0aafadd8ac8ed0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find and return the next object.  <a href="bstree_8c.html#af684a6b91402abc2f0aafadd8ac8ed0b">More...</a><br /></td></tr>
-<tr class="separator:af684a6b91402abc2f0aafadd8ac8ed0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4d963b0f0274dfe90837f4a7779eed1"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bstree_8c.html#ac4d963b0f0274dfe90837f4a7779eed1">find_prev_bst_node</a> (const struct <a class="el" href="structbstree.html">bstree</a> *tree, const void *searchobj)</td></tr>
 <tr class="memdesc:ac4d963b0f0274dfe90837f4a7779eed1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the previous node.  <a href="bstree_8c.html#ac4d963b0f0274dfe90837f4a7779eed1">More...</a><br /></td></tr>
 <tr class="separator:ac4d963b0f0274dfe90837f4a7779eed1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a797b95cfc8dacedd50c56fbbdbf517a4"><td class="memItemLeft" align="right" valign="top">static void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bstree_8c.html#a797b95cfc8dacedd50c56fbbdbf517a4">find_prev_node</a> (const struct <a class="el" href="structbstreenode.html">bstreenode</a> *currentnode, const void *searchobj, int(*comp)(const void *, const void *))</td></tr>
-<tr class="memdesc:a797b95cfc8dacedd50c56fbbdbf517a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find and return the previous object.  <a href="bstree_8c.html#a797b95cfc8dacedd50c56fbbdbf517a4">More...</a><br /></td></tr>
-<tr class="separator:a797b95cfc8dacedd50c56fbbdbf517a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a012b8ae70029c72eaaf81a0765c0e49a"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bstree_8c.html#a012b8ae70029c72eaaf81a0765c0e49a">upd_bst_node</a> (const struct <a class="el" href="structbstree.html">bstree</a> *tree, const void *updobj, size_t objsize)</td></tr>
 <tr class="memdesc:a012b8ae70029c72eaaf81a0765c0e49a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update a node's object.  <a href="bstree_8c.html#a012b8ae70029c72eaaf81a0765c0e49a">More...</a><br /></td></tr>
 <tr class="separator:a012b8ae70029c72eaaf81a0765c0e49a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73aab1f5429f1bcce37dc0592d4849d9"><td class="memItemLeft" align="right" valign="top">static void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bstree_8c.html#a73aab1f5429f1bcce37dc0592d4849d9">upd_node</a> (struct <a class="el" href="structbstreenode.html">bstreenode</a> *currentnode, const void *updobj, size_t objsize, int(*comp)(const void *, const void *))</td></tr>
-<tr class="memdesc:a73aab1f5429f1bcce37dc0592d4849d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the object.  <a href="bstree_8c.html#a73aab1f5429f1bcce37dc0592d4849d9">More...</a><br /></td></tr>
-<tr class="separator:a73aab1f5429f1bcce37dc0592d4849d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54a009d4d10be3cfaeef8cd0933a8993"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structbstree.html">bstree</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bstree_8c.html#a54a009d4d10be3cfaeef8cd0933a8993">del_bst_node</a> (struct <a class="el" href="structbstree.html">bstree</a> *tree, const void *searchobj)</td></tr>
 <tr class="memdesc:a54a009d4d10be3cfaeef8cd0933a8993"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete a node.  <a href="bstree_8c.html#a54a009d4d10be3cfaeef8cd0933a8993">More...</a><br /></td></tr>
 <tr class="separator:a54a009d4d10be3cfaeef8cd0933a8993"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6d6514682635e572bd8386dffdb4e78"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="structbstreenode.html">bstreenode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bstree_8c.html#ad6d6514682635e572bd8386dffdb4e78">del_node</a> (struct <a class="el" href="structbstreenode.html">bstreenode</a> *currentnode, const void *searchobj, struct <a class="el" href="structbstree.html">bstree</a> *tree)</td></tr>
-<tr class="memdesc:ad6d6514682635e572bd8386dffdb4e78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete node.  <a href="bstree_8c.html#ad6d6514682635e572bd8386dffdb4e78">More...</a><br /></td></tr>
-<tr class="separator:ad6d6514682635e572bd8386dffdb4e78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef02c9547b4c46ca56ddf7fa79046dda"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structbstree.html">bstree</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bstree_8c.html#aef02c9547b4c46ca56ddf7fa79046dda">del_bst</a> (struct <a class="el" href="structbstree.html">bstree</a> *tree)</td></tr>
 <tr class="memdesc:aef02c9547b4c46ca56ddf7fa79046dda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete a bst.  <a href="bstree_8c.html#aef02c9547b4c46ca56ddf7fa79046dda">More...</a><br /></td></tr>
 <tr class="separator:aef02c9547b4c46ca56ddf7fa79046dda"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72fa45edc1fd1fdafc5d804864af88db"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="structbstreenode.html">bstreenode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bstree_8c.html#a72fa45edc1fd1fdafc5d804864af88db">free_bstree</a> (struct <a class="el" href="structbstreenode.html">bstreenode</a> *currentnode)</td></tr>
-<tr class="memdesc:a72fa45edc1fd1fdafc5d804864af88db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free memory allocated to the bstree.  <a href="bstree_8c.html#a72fa45edc1fd1fdafc5d804864af88db">More...</a><br /></td></tr>
-<tr class="separator:a72fa45edc1fd1fdafc5d804864af88db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b2d00d5184a9c0d7958f0003db0ec71"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="structbstreenode.html">bstreenode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bstree_8c.html#a7b2d00d5184a9c0d7958f0003db0ec71">free_bst_node</a> (struct <a class="el" href="structbstreenode.html">bstreenode</a> *currentnode)</td></tr>
-<tr class="memdesc:a7b2d00d5184a9c0d7958f0003db0ec71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free memory allocated to the node.  <a href="bstree_8c.html#a7b2d00d5184a9c0d7958f0003db0ec71">More...</a><br /></td></tr>
-<tr class="separator:a7b2d00d5184a9c0d7958f0003db0ec71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e767bbbe06c82e3774caaf88f4ceeec"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structbstobjcoord.html">bstobjcoord</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bstree_8c.html#a1e767bbbe06c82e3774caaf88f4ceeec">find_next_bst_node_trace</a> (const struct <a class="el" href="structbstree.html">bstree</a> *tree, struct <a class="el" href="structbstobjcoord.html">bstobjcoord</a> *searchobj)</td></tr>
 <tr class="memdesc:a1e767bbbe06c82e3774caaf88f4ceeec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find and return the next object and it's coordinates in the bst 'tree'.  <a href="bstree_8c.html#a1e767bbbe06c82e3774caaf88f4ceeec">More...</a><br /></td></tr>
 <tr class="separator:a1e767bbbe06c82e3774caaf88f4ceeec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade1ceaa4e9544ffabc2385bada685fc7"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="structbstobjcoord.html">bstobjcoord</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bstree_8c.html#ade1ceaa4e9544ffabc2385bada685fc7">find_next_node_trace</a> (const struct <a class="el" href="structbstreenode.html">bstreenode</a> *currentnode, struct <a class="el" href="structbstobjcoord.html">bstobjcoord</a> *searchobj, int(*comp)(const void *, const void *))</td></tr>
-<tr class="memdesc:ade1ceaa4e9544ffabc2385bada685fc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find and return the next object and it's coordinates.  <a href="bstree_8c.html#ade1ceaa4e9544ffabc2385bada685fc7">More...</a><br /></td></tr>
-<tr class="separator:ade1ceaa4e9544ffabc2385bada685fc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Builds, searches and releases a binary search tree.</p>
@@ -191,10 +192,10 @@ Functions</h2></td></tr>
 </p>
 </blockquote>
 <p><em>In fact, the same as strcmp().</em></p>
-<dl class="section author"><dt>Author</dt><dd>Copyright (C) 2015-2021 Mark Grant</dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Copyright (C) 2015-2022 Mark Grant</dd></dl>
 <p>Released under the GPLv3 only.<br  />
 SPDX-License-Identifier: GPL-3.0-only</p>
-<dl class="section version"><dt>Version</dt><dd><em>v1.1.10 ==== 03/12/2021</em> </dd></dl>
+<dl class="section version"><dt>Version</dt><dd><em>v1.1.11 ==== 16/09/2022</em> </dd></dl>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="a8a0ae362f96ff51f60a04ae54560501f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8a0ae362f96ff51f60a04ae54560501f">&#9670;&nbsp;</a></span>add_bst_node()</h2>
@@ -248,8 +249,8 @@ tree = tmp_tree;
 
 </div>
 </div>
-<a id="a1c8949532ee0169a9faf7a1caf20f062"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1c8949532ee0169a9faf7a1caf20f062">&#9670;&nbsp;</a></span>add_node()</h2>
+<a id="a11e4ed12cd1b235985f1fc426f4fa157"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11e4ed12cd1b235985f1fc426f4fa157">&#9670;&nbsp;</a></span>add_node()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -258,7 +259,7 @@ tree = tmp_tree;
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static struct <a class="el" href="structbstreenode.html">bstreenode</a>* add_node </td>
+          <td class="memname">static struct <a class="el" href="structbstreenode.html">bstreenode</a> * add_node </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structbstreenode.html">bstreenode</a> *&#160;</td>
           <td class="paramname"><em>currentnode</em>, </td>
@@ -422,8 +423,8 @@ and which returns the value of:-<br  />
 
 </div>
 </div>
-<a id="ad6d6514682635e572bd8386dffdb4e78"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad6d6514682635e572bd8386dffdb4e78">&#9670;&nbsp;</a></span>del_node()</h2>
+<a id="ad28df34dcb13229f2c86e770859b3337"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad28df34dcb13229f2c86e770859b3337">&#9670;&nbsp;</a></span>del_node()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -432,7 +433,7 @@ and which returns the value of:-<br  />
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static struct <a class="el" href="structbstreenode.html">bstreenode</a>* del_node </td>
+          <td class="memname">static struct <a class="el" href="structbstreenode.html">bstreenode</a> * del_node </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structbstreenode.html">bstreenode</a> *&#160;</td>
           <td class="paramname"><em>currentnode</em>, </td>
@@ -589,8 +590,8 @@ and which returns the value of:-<br  />
 
 </div>
 </div>
-<a id="af684a6b91402abc2f0aafadd8ac8ed0b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af684a6b91402abc2f0aafadd8ac8ed0b">&#9670;&nbsp;</a></span>find_next_node()</h2>
+<a id="a0188c44186fe0c74bdb8e8d76320a391"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0188c44186fe0c74bdb8e8d76320a391">&#9670;&nbsp;</a></span>find_next_node()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -599,7 +600,7 @@ and which returns the value of:-<br  />
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void* find_next_node </td>
+          <td class="memname">static void * find_next_node </td>
           <td>(</td>
           <td class="paramtype">const struct <a class="el" href="structbstreenode.html">bstreenode</a> *&#160;</td>
           <td class="paramname"><em>currentnode</em>, </td>
@@ -642,8 +643,8 @@ and which returns the value of:-<br  />
 
 </div>
 </div>
-<a id="ade1ceaa4e9544ffabc2385bada685fc7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade1ceaa4e9544ffabc2385bada685fc7">&#9670;&nbsp;</a></span>find_next_node_trace()</h2>
+<a id="a7393e2c1af4a4b374977b309f799a201"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7393e2c1af4a4b374977b309f799a201">&#9670;&nbsp;</a></span>find_next_node_trace()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -652,7 +653,7 @@ and which returns the value of:-<br  />
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static struct <a class="el" href="structbstobjcoord.html">bstobjcoord</a>* find_next_node_trace </td>
+          <td class="memname">static struct <a class="el" href="structbstobjcoord.html">bstobjcoord</a> * find_next_node_trace </td>
           <td>(</td>
           <td class="paramtype">const struct <a class="el" href="structbstreenode.html">bstreenode</a> *&#160;</td>
           <td class="paramname"><em>currentnode</em>, </td>
@@ -695,8 +696,8 @@ and which returns the value of:-<br  />
 
 </div>
 </div>
-<a id="a2843b85cedbb59a9519de38c4d26890c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2843b85cedbb59a9519de38c4d26890c">&#9670;&nbsp;</a></span>find_node()</h2>
+<a id="af091240b9d0a55b13fb9600a13cda11d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af091240b9d0a55b13fb9600a13cda11d">&#9670;&nbsp;</a></span>find_node()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -705,7 +706,7 @@ and which returns the value of:-<br  />
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void* find_node </td>
+          <td class="memname">static void * find_node </td>
           <td>(</td>
           <td class="paramtype">const struct <a class="el" href="structbstreenode.html">bstreenode</a> *&#160;</td>
           <td class="paramname"><em>currentnode</em>, </td>
@@ -786,8 +787,8 @@ and which returns the value of:-<br  />
 
 </div>
 </div>
-<a id="a797b95cfc8dacedd50c56fbbdbf517a4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a797b95cfc8dacedd50c56fbbdbf517a4">&#9670;&nbsp;</a></span>find_prev_node()</h2>
+<a id="aba0fe5c8fcf56007f437272a5d2964b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba0fe5c8fcf56007f437272a5d2964b2">&#9670;&nbsp;</a></span>find_prev_node()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -796,7 +797,7 @@ and which returns the value of:-<br  />
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void* find_prev_node </td>
+          <td class="memname">static void * find_prev_node </td>
           <td>(</td>
           <td class="paramtype">const struct <a class="el" href="structbstreenode.html">bstreenode</a> *&#160;</td>
           <td class="paramname"><em>currentnode</em>, </td>
@@ -839,8 +840,8 @@ and which returns the value of:-<br  />
 
 </div>
 </div>
-<a id="a7b2d00d5184a9c0d7958f0003db0ec71"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7b2d00d5184a9c0d7958f0003db0ec71">&#9670;&nbsp;</a></span>free_bst_node()</h2>
+<a id="ad6b05bf3e1913d9018a39ac1c137f8b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6b05bf3e1913d9018a39ac1c137f8b7">&#9670;&nbsp;</a></span>free_bst_node()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -849,7 +850,7 @@ and which returns the value of:-<br  />
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static struct <a class="el" href="structbstreenode.html">bstreenode</a>* free_bst_node </td>
+          <td class="memname">static struct <a class="el" href="structbstreenode.html">bstreenode</a> * free_bst_node </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structbstreenode.html">bstreenode</a> *&#160;</td>
           <td class="paramname"><em>currentnode</em></td><td>)</td>
@@ -874,8 +875,8 @@ and which returns the value of:-<br  />
 
 </div>
 </div>
-<a id="a72fa45edc1fd1fdafc5d804864af88db"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a72fa45edc1fd1fdafc5d804864af88db">&#9670;&nbsp;</a></span>free_bstree()</h2>
+<a id="ad21788f61b527b070296483cdf22b253"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad21788f61b527b070296483cdf22b253">&#9670;&nbsp;</a></span>free_bstree()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -884,7 +885,7 @@ and which returns the value of:-<br  />
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static struct <a class="el" href="structbstreenode.html">bstreenode</a>* free_bstree </td>
+          <td class="memname">static struct <a class="el" href="structbstreenode.html">bstreenode</a> * free_bstree </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structbstreenode.html">bstreenode</a> *&#160;</td>
           <td class="paramname"><em>currentnode</em></td><td>)</td>
@@ -1045,8 +1046,8 @@ and which returns the value of:-<br  />
 
 </div>
 </div>
-<a id="a73aab1f5429f1bcce37dc0592d4849d9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a73aab1f5429f1bcce37dc0592d4849d9">&#9670;&nbsp;</a></span>upd_node()</h2>
+<a id="a9caaf6a9e36ab5af07e9c46b632a43c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9caaf6a9e36ab5af07e9c46b632a43c0">&#9670;&nbsp;</a></span>upd_node()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1055,7 +1056,7 @@ and which returns the value of:-<br  />
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void* upd_node </td>
+          <td class="memname">static void * upd_node </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structbstreenode.html">bstreenode</a> *&#160;</td>
           <td class="paramname"><em>currentnode</em>, </td>

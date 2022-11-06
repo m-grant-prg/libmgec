@@ -1,8 +1,9 @@
 <map id="src/prg/c/src/libmgec/errors/errno.c" name="src/prg/c/src/libmgec/errors/errno.c">
-<area shape="rect" id="node1" title=" " alt="" coords="81,5,237,47"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,169,101,196"/>
-<area shape="rect" id="node3" href="$errors_2internal_8h.html" title=" " alt="" coords="175,95,259,121"/>
-<area shape="rect" id="node5" href="$mge-errno_8h.html" title=" " alt="" coords="49,95,151,121"/>
-<area shape="rect" id="node6" href="$libmgec_8h.html" title=" " alt="" coords="283,95,370,121"/>
-<area shape="rect" id="node4" href="$portability_8h.html" title=" " alt="" coords="168,169,267,196"/>
+<area shape="rect" id="node1" title=" " alt="" coords="82,5,238,47"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,169,80,196"/>
+<area shape="rect" id="node3" href="$errors_2internal_8h.html" title=" " alt="" coords="50,95,134,121"/>
+<area shape="rect" id="node5" href="$libmgec_8h.html" title=" " alt="" coords="158,95,301,121"/>
+<area shape="rect" id="node6" href="$mge-errno_8h.html" title=" " alt="" coords="325,95,483,121"/>
+<area shape="rect" id="node4" href="$mge-portability_8h.html" title=" " alt="" coords="135,169,324,196"/>
+<area shape="rect" id="node7" title=" " alt="" coords="356,169,452,196"/>
 </map>
