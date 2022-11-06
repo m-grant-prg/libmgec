@@ -1,12 +1,12 @@
 <map id="src/prg/c/src/libmgec/listsandsorts/dllist.c" name="src/prg/c/src/libmgec/listsandsorts/dllist.c">
-<area shape="rect" id="node1" title=" " alt="" coords="241,5,397,47"/>
+<area shape="rect" id="node1" title=" " alt="" coords="193,5,349,47"/>
 <area shape="rect" id="node2" title=" " alt="" coords="5,95,73,121"/>
 <area shape="rect" id="node3" title=" " alt="" coords="98,95,165,121"/>
 <area shape="rect" id="node4" title=" " alt="" coords="189,95,260,121"/>
 <area shape="rect" id="node5" title=" " alt="" coords="284,95,355,121"/>
-<area shape="rect" id="node6" title=" " alt="" coords="379,95,500,121"/>
-<area shape="rect" id="node7" href="$dllist_8h.html" title=" " alt="" coords="525,95,591,121"/>
-<area shape="rect" id="node9" href="$mge-errno_8h.html" title=" " alt="" coords="616,95,719,121"/>
-<area shape="rect" id="node8" href="$portability_8h.html" title=" " alt="" coords="509,169,607,196"/>
-<area shape="rect" id="node10" title=" " alt="" coords="631,169,727,196"/>
+<area shape="rect" id="node6" href="$dllist_8h.html" title=" " alt="" coords="379,95,502,121"/>
+<area shape="rect" id="node9" href="$mge-errno_8h.html" title=" " alt="" coords="527,95,685,121"/>
+<area shape="rect" id="node7" href="$mge-portability_8h.html" title=" " alt="" coords="423,169,613,196"/>
+<area shape="rect" id="node8" title=" " alt="" coords="325,169,399,196"/>
+<area shape="rect" id="node10" title=" " alt="" coords="637,169,733,196"/>
 </map>

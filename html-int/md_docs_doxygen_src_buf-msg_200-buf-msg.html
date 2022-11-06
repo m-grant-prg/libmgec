@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MGE General C Library - Full Internal Documentation
-   &#160;<span id="projectnumber">v1.6.5+rc1</span>
+   &#160;<span id="projectnumber">v1.7.2</span>
    </div>
    <div id="projectbrief">Library of general C functions.</div>
   </td>
@@ -88,8 +88,7 @@ $(document).ready(function(){initNavTree('md_docs_doxygen_src_buf-msg_200-buf-ms
 </div><!--header-->
 <div class="contents">
 <div class="toc"><h3>Table of Contents</h3>
-<ul><li class="level1"><a href="#overview">Overview</a></li>
-<li class="level1"><a href="#buf">Buffers</a><ul><li class="level2"><a href="#concatbuf">concat_buf()</a></li>
+<ul><li class="level1"><a href="#buf">Buffers</a><ul><li class="level2"><a href="#concatbuf">concat_buf()</a></li>
 <li class="level2"><a href="#trimbuf">trim_buf()</a></li>
 </ul>
 </li>
@@ -115,16 +114,16 @@ Overview</h1>
 </p>
 <h1><a class="anchor" id="buf"></a>
 Buffers</h1>
-<p>The buffers area consists of 2 functions; <a class="el" href="mgebuffer_8h.html#a84f0acd02cc1377f3fa2e3ac9c3b9ec2" title="Concatenate the used portion of a flat buffer into a buffer object.">concat_buf()</a> and <a class="el" href="mgebuffer_8h.html#adb167a2d1c26596ae70f35c495cf5286" title="Remove processed data from a buffer object if deemed necessary.">trim_buf()</a>.</p>
+<p>The buffers area consists of 2 functions; <a class="el" href="mge-buffer_8h.html#a84f0acd02cc1377f3fa2e3ac9c3b9ec2" title="Concatenate the used portion of a flat buffer into a buffer object.">concat_buf()</a> and <a class="el" href="mge-buffer_8h.html#adb167a2d1c26596ae70f35c495cf5286" title="Remove processed data from a buffer object if deemed necessary.">trim_buf()</a>.</p>
 <h2><a class="anchor" id="concatbuf"></a>
 concat_buf()</h2>
-<p><a class="el" href="mgebuffer_8h.html#a84f0acd02cc1377f3fa2e3ac9c3b9ec2" title="Concatenate the used portion of a flat buffer into a buffer object.">concat_buf()</a> takes the supplied flat buffer and appends it to the buffer in the supplied <a class="el" href="structmgebuffer.html">mgebuffer struct</a> updating the relevant pointers.</p>
+<p><a class="el" href="mge-buffer_8h.html#a84f0acd02cc1377f3fa2e3ac9c3b9ec2" title="Concatenate the used portion of a flat buffer into a buffer object.">concat_buf()</a> takes the supplied flat buffer and appends it to the buffer in the supplied <a class="el" href="structmgebuffer.html">mgebuffer struct</a> updating the relevant pointers.</p>
 <h2><a class="anchor" id="trimbuf"></a>
 trim_buf()</h2>
-<p>The <a class="el" href="mgebuffer_8h.html#adb167a2d1c26596ae70f35c495cf5286" title="Remove processed data from a buffer object if deemed necessary.">trim_buf()</a> function removes processed data from the <a class="el" href="structmgebuffer.html">mgebuffer struct</a> buffer. It is typically called after some or all of the data in the <a class="el" href="structmgebuffer.html">mgebuffer struct</a> has been processed, often after <a class="el" href="message_8c.html#aa12f32bb998a72d957336b93491e1cac" title="Get a message from a buffer object.">get_msg()</a> has extracted data to a <a class="el" href="structmgemessage.html">mgemessage struct</a>.</p>
+<p>The <a class="el" href="mge-buffer_8h.html#adb167a2d1c26596ae70f35c495cf5286" title="Remove processed data from a buffer object if deemed necessary.">trim_buf()</a> function removes processed data from the <a class="el" href="structmgebuffer.html">mgebuffer struct</a> buffer. It is typically called after some or all of the data in the <a class="el" href="structmgebuffer.html">mgebuffer struct</a> has been processed, often after <a class="el" href="message_8c.html#aa12f32bb998a72d957336b93491e1cac" title="Get a message from a buffer object.">get_msg()</a> has extracted data to a <a class="el" href="structmgemessage.html">mgemessage struct</a>.</p>
 <h1><a class="anchor" id="messages"></a>
 Messages</h1>
-<p>The message area API consists of 2 functions; <a class="el" href="mgemessage_8h.html#a41d33ae7dacfcac0c7853faeadab7558" title="Pull a message from a buffer object.">pull_msg()</a> and <a class="el" href="mgemessage_8h.html#a0540546fe564b51dbccd55ba0f86ea2f" title="Clear message struct.">clear_msg()</a>. Behind the scenes <a class="el" href="message_8c.html#aa12f32bb998a72d957336b93491e1cac" title="Get a message from a buffer object.">get_msg()</a> and <a class="el" href="message_8c.html#a2125d2bf942ec7739238ca700879935c" title="Deconstruct a complete message to its individual elements.">deconstruct_msg()</a> are called from <a class="el" href="mgemessage_8h.html#a41d33ae7dacfcac0c7853faeadab7558" title="Pull a message from a buffer object.">pull_msg()</a>.</p>
+<p>The message area API consists of 2 functions; <a class="el" href="mge-message_8h.html#a41d33ae7dacfcac0c7853faeadab7558" title="Pull a message from a buffer object.">pull_msg()</a> and <a class="el" href="mge-message_8h.html#a0540546fe564b51dbccd55ba0f86ea2f" title="Clear message struct.">clear_msg()</a>. Behind the scenes <a class="el" href="message_8c.html#aa12f32bb998a72d957336b93491e1cac" title="Get a message from a buffer object.">get_msg()</a> and <a class="el" href="message_8c.html#a2125d2bf942ec7739238ca700879935c" title="Deconstruct a complete message to its individual elements.">deconstruct_msg()</a> are called from <a class="el" href="mge-message_8h.html#a41d33ae7dacfcac0c7853faeadab7558" title="Pull a message from a buffer object.">pull_msg()</a>.</p>
 <p>The following diagram shows a typical message workflow.</p>
 <p><div class="diagraph">
 <img src="dia_msg-flow.png" />
@@ -134,7 +133,7 @@ Messages</h1>
 Functions</h2>
 <h3><a class="anchor" id="pullmsg"></a>
 pull_msg()</h3>
-<p>The <a class="el" href="mgemessage_8h.html#a41d33ae7dacfcac0c7853faeadab7558" title="Pull a message from a buffer object.">pull_msg()</a> function extracts data from the <a class="el" href="structmgebuffer.html">mgebuffer struct</a> buffer and loads it into a <a class="el" href="structmgemessage.html">mgemessage struct</a>. The processed part of the <a class="el" href="structmgebuffer.html">mgebuffer struct</a> buffer is then removed by invoking <a class="el" href="mgebuffer_8h.html#adb167a2d1c26596ae70f35c495cf5286" title="Remove processed data from a buffer object if deemed necessary.">trim_buf()</a>. If the <a class="el" href="structmgemessage.html">mgemessage struct</a> buffer then holds a complete message it is deconstructed and fully populates the <a class="el" href="structmgemessage.html">mgemessage struct</a>.</p>
+<p>The <a class="el" href="mge-message_8h.html#a41d33ae7dacfcac0c7853faeadab7558" title="Pull a message from a buffer object.">pull_msg()</a> function extracts data from the <a class="el" href="structmgebuffer.html">mgebuffer struct</a> buffer and loads it into a <a class="el" href="structmgemessage.html">mgemessage struct</a>. The processed part of the <a class="el" href="structmgebuffer.html">mgebuffer struct</a> buffer is then removed by invoking <a class="el" href="mge-buffer_8h.html#adb167a2d1c26596ae70f35c495cf5286" title="Remove processed data from a buffer object if deemed necessary.">trim_buf()</a>. If the <a class="el" href="structmgemessage.html">mgemessage struct</a> buffer then holds a complete message it is deconstructed and fully populates the <a class="el" href="structmgemessage.html">mgemessage struct</a>.</p>
 <p><div class="diagraph">
 <img src="dia_pull-msg-flow.png" />
 </div>
@@ -152,10 +151,10 @@ get_msg()</h3>
 </p>
 <h3><a class="anchor" id="deconstructmsg"></a>
 deconstruct_msg()</h3>
-<p>The <a class="el" href="message_8c.html#a2125d2bf942ec7739238ca700879935c" title="Deconstruct a complete message to its individual elements.">deconstruct_msg()</a> function is invoked by the <a class="el" href="mgemessage_8h.html#a41d33ae7dacfcac0c7853faeadab7558" title="Pull a message from a buffer object.">pull_msg()</a> function when the <a class="el" href="structmgemessage.html">mgemessage struct</a> buffer contains a complete message. This function then parses the message into it's individual fields and places them in argv updating argc. (argc and argv have the same function and format as in the standard C main function).</p>
+<p>The <a class="el" href="message_8c.html#a2125d2bf942ec7739238ca700879935c" title="Deconstruct a complete message to its individual elements.">deconstruct_msg()</a> function is invoked by the <a class="el" href="mge-message_8h.html#a41d33ae7dacfcac0c7853faeadab7558" title="Pull a message from a buffer object.">pull_msg()</a> function when the <a class="el" href="structmgemessage.html">mgemessage struct</a> buffer contains a complete message. This function then parses the message into it's individual fields and places them in argv updating argc. (argc and argv have the same function and format as in the standard C main function).</p>
 <h3><a class="anchor" id="clearmsg"></a>
 clear_msg()</h3>
-<p>The <a class="el" href="mgemessage_8h.html#a0540546fe564b51dbccd55ba0f86ea2f" title="Clear message struct.">clear_msg()</a> function frees the message buffer and argument storage and resets the other fileds to initial values. </p>
+<p>The <a class="el" href="mge-message_8h.html#a0540546fe564b51dbccd55ba0f86ea2f" title="Clear message struct.">clear_msg()</a> function frees the message buffer and argument storage and resets the other fileds to initial values. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

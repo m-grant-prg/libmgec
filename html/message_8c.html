@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MGE General C Library - API Documentation
-   &#160;<span id="projectnumber">v1.6.5+rc1</span>
+   &#160;<span id="projectnumber">v1.7.2</span>
    </div>
    <div id="projectbrief">Library of general C functions.</div>
   </td>
@@ -95,33 +95,31 @@ $(document).ready(function(){initNavTree('message_8c.html',''); initResizable();
 <code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &lt;stdlib.h&gt;</code><br />
 <code>#include &lt;string.h&gt;</code><br />
-<code>#include &lt;syslog.h&gt;</code><br />
 <code>#include &quot;internal.h&quot;</code><br />
-<code>#include &lt;<a class="el" href="libmgec_8h_source.html">libmgec.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="mge-errno_8h_source.html">mge-errno.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="mgebuffer_8h_source.html">mgebuffer.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="mgememory_8h_source.html">mgememory.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="mgemessage_8h_source.html">mgemessage.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="libmgec_8h_source.html">libmgec/libmgec.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="mge-buffer_8h_source.html">libmgec/mge-buffer.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="mge-errno_8h_source.html">libmgec/mge-errno.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="mge-memory_8h_source.html">libmgec/mge-memory.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="mge-message_8h_source.html">libmgec/mge-message.h</a>&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for message.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="message_8c__incl.png" border="0" usemap="#src_2prg_2c_2src_2libmgec_2buf-msg_2message_8c" alt=""/></div>
 <map name="src_2prg_2c_2src_2libmgec_2buf-msg_2message_8c" id="src_2prg_2c_2src_2libmgec_2buf-msg_2message_8c">
-<area shape="rect" title=" " alt="" coords="497,5,653,47"/>
-<area shape="rect" title=" " alt="" coords="5,95,73,121"/>
-<area shape="rect" title=" " alt="" coords="98,95,181,121"/>
-<area shape="rect" title=" " alt="" coords="205,95,271,121"/>
-<area shape="rect" title=" " alt="" coords="296,95,367,121"/>
-<area shape="rect" title=" " alt="" coords="391,95,461,121"/>
-<area shape="rect" title=" " alt="" coords="485,95,561,121"/>
-<area shape="rect" title=" " alt="" coords="585,95,669,121"/>
-<area shape="rect" href="libmgec_8h.html" title=" " alt="" coords="532,169,619,196"/>
-<area shape="rect" href="mge-errno_8h.html" title=" " alt="" coords="643,169,745,196"/>
-<area shape="rect" href="mgebuffer_8h.html" title=" " alt="" coords="769,169,869,196"/>
-<area shape="rect" href="mgememory_8h.html" title=" " alt="" coords="996,169,1112,196"/>
-<area shape="rect" href="mgemessage_8h.html" title=" " alt="" coords="846,95,969,121"/>
-<area shape="rect" href="portability_8h.html" title=" " alt="" coords="770,244,869,271"/>
-<area shape="rect" title=" " alt="" coords="901,244,997,271"/>
+<area shape="rect" title=" " alt="" coords="445,5,601,47"/>
+<area shape="rect" title=" " alt="" coords="57,95,125,121"/>
+<area shape="rect" title=" " alt="" coords="173,169,255,196"/>
+<area shape="rect" title=" " alt="" coords="611,95,678,121"/>
+<area shape="rect" title=" " alt="" coords="703,95,773,121"/>
+<area shape="rect" title=" " alt="" coords="797,95,868,121"/>
+<area shape="rect" title=" " alt="" coords="892,95,976,121"/>
+<area shape="rect" href="libmgec_8h.html" title=" " alt="" coords="5,169,148,196"/>
+<area shape="rect" href="mge-buffer_8h.html" title=" " alt="" coords="381,169,543,196"/>
+<area shape="rect" href="mge-errno_8h.html" title=" " alt="" coords="567,169,725,196"/>
+<area shape="rect" href="mge-memory_8h.html" title=" " alt="" coords="749,169,927,196"/>
+<area shape="rect" href="mge-message_8h.html" title=" " alt="" coords="252,95,435,121"/>
+<area shape="rect" href="mge-portability_8h.html" title=" " alt="" coords="367,244,557,271"/>
+<area shape="rect" title=" " alt="" coords="589,244,685,271"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -152,7 +150,7 @@ Variables</h2></td></tr>
 <dl class="section author"><dt>Author</dt><dd>Copyright (C) 2017-2022 Mark Grant</dd></dl>
 <p>Released under the GPLv3 only.<br  />
 SPDX-License-Identifier: GPL-3.0-only</p>
-<dl class="section version"><dt>Version</dt><dd><em>v1.0.17 ==== 10/06/2022</em> </dd></dl>
+<dl class="section version"><dt>Version</dt><dd><em>v1.0.18 ==== 16/09/2022</em> </dd></dl>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="a0540546fe564b51dbccd55ba0f86ea2f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0540546fe564b51dbccd55ba0f86ea2f">&#9670;&nbsp;</a></span>clear_msg()</h2>

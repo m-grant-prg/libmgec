@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MGE General C Library - API Documentation: src/prg/c/inc/sllist.h File Reference</title>
+<title>MGE General C Library - API Documentation: src/prg/c/inc/libmgec/sllist.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MGE General C Library - API Documentation
-   &#160;<span id="projectnumber">v1.6.5+rc1</span>
+   &#160;<span id="projectnumber">v1.7.2</span>
    </div>
    <div id="projectbrief">Library of general C functions.</div>
   </td>
@@ -91,23 +91,25 @@ $(document).ready(function(){initNavTree('sllist_8h.html',''); initResizable(); 
 <div class="title">sllist.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="portability_8h_source.html">portability.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="mge-portability_8h_source.html">libmgec/mge-portability.h</a>&gt;</code><br />
+<code>#include &lt;stddef.h&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for sllist.h:</div>
 <div class="dyncontent">
-<div class="center"><img src="sllist_8h__incl.png" border="0" usemap="#src_2prg_2c_2inc_2sllist_8h" alt=""/></div>
-<map name="src_2prg_2c_2inc_2sllist_8h" id="src_2prg_2c_2inc_2sllist_8h">
-<area shape="rect" title=" " alt="" coords="5,5,152,32"/>
-<area shape="rect" href="portability_8h.html" title=" " alt="" coords="29,80,128,107"/>
+<div class="center"><img src="sllist_8h__incl.png" border="0" usemap="#src_2prg_2c_2inc_2libmgec_2sllist_8h" alt=""/></div>
+<map name="src_2prg_2c_2inc_2libmgec_2sllist_8h" id="src_2prg_2c_2inc_2libmgec_2sllist_8h">
+<area shape="rect" title=" " alt="" coords="99,5,255,47"/>
+<area shape="rect" href="mge-portability_8h.html" title=" " alt="" coords="5,95,195,121"/>
+<area shape="rect" title=" " alt="" coords="219,95,293,121"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><img src="sllist_8h__dep__incl.png" border="0" usemap="#src_2prg_2c_2inc_2sllist_8hdep" alt=""/></div>
-<map name="src_2prg_2c_2inc_2sllist_8hdep" id="src_2prg_2c_2inc_2sllist_8hdep">
-<area shape="rect" title=" " alt="" coords="10,5,157,32"/>
-<area shape="rect" href="sllist_8c.html" title=" " alt="" coords="5,80,161,121"/>
+<div class="center"><img src="sllist_8h__dep__incl.png" border="0" usemap="#src_2prg_2c_2inc_2libmgec_2sllist_8hdep" alt=""/></div>
+<map name="src_2prg_2c_2inc_2libmgec_2sllist_8hdep" id="src_2prg_2c_2inc_2libmgec_2sllist_8hdep">
+<area shape="rect" title=" " alt="" coords="5,5,161,47"/>
+<area shape="rect" href="sllist_8c.html" title=" " alt="" coords="5,95,161,136"/>
 </map>
 </div>
 </div>
@@ -146,10 +148,10 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Singly linked list header file.</p>
 <p>Header file for singly linked lists in the libmgec shared library.</p>
-<dl class="section author"><dt>Author</dt><dd>Copyright (C) 2016-2019, 2021 Mark Grant</dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Copyright (C) 2016-2019, 2021, 2022 Mark Grant</dd></dl>
 <p>Released under the GPLv3 only.<br  />
 SPDX-License-Identifier: GPL-3.0-only</p>
-<dl class="section version"><dt>Version</dt><dd><em>v1.0.8 ==== 03/12/2021</em> </dd></dl>
+<dl class="section version"><dt>Version</dt><dd><em>v1.0.9 ==== 15/09/2022</em> </dd></dl>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a14eb7234d6883f947f6edfaf12465e98"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a14eb7234d6883f947f6edfaf12465e98">&#9670;&nbsp;</a></span>for_each_sll_node</h2>
@@ -391,7 +393,7 @@ SPDX-License-Identifier: GPL-3.0-only</p>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_a1986ada3285f0a0ebcb94921d9f60ef.html">prg</a></li><li class="navelem"><a class="el" href="dir_088b4e4436e06887f3fa9c5a3af9d85c.html">c</a></li><li class="navelem"><a class="el" href="dir_aba9309797a73b547f3d5132b7fc17af.html">inc</a></li><li class="navelem"><a class="el" href="sllist_8h.html">sllist.h</a></li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_a1986ada3285f0a0ebcb94921d9f60ef.html">prg</a></li><li class="navelem"><a class="el" href="dir_088b4e4436e06887f3fa9c5a3af9d85c.html">c</a></li><li class="navelem"><a class="el" href="dir_aba9309797a73b547f3d5132b7fc17af.html">inc</a></li><li class="navelem"><a class="el" href="dir_5900b9a12101fec82694542326e6190e.html">libmgec</a></li><li class="navelem"><a class="el" href="sllist_8h.html">sllist.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

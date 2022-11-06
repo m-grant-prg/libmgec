@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MGE General C Library - Full Internal Documentation
-   &#160;<span id="projectnumber">v1.6.5+rc1</span>
+   &#160;<span id="projectnumber">v1.7.2</span>
    </div>
    <div id="projectbrief">Library of general C functions.</div>
   </td>
@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('structbstreenode.html',''); initResiza
 <p>Binary search tree node.  
  <a href="structbstreenode.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="bstree_8h_source.html">bstree.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="mge-bstree_8h_source.html">mge-bstree.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for bstreenode:</div>
 <div class="dyncontent">
@@ -112,10 +112,10 @@ Data Fields</h2></td></tr>
 <tr class="memdesc:ad43c3812e6d13e0518d9f8b8f463ffcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">The node counter.  <a href="structbstreenode.html#ad43c3812e6d13e0518d9f8b8f463ffcf">More...</a><br /></td></tr>
 <tr class="separator:ad43c3812e6d13e0518d9f8b8f463ffcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec0da8cf6b35ff35821b84d15ffad906"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structbstreenode.html">bstreenode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbstreenode.html#aec0da8cf6b35ff35821b84d15ffad906">childless</a></td></tr>
-<tr class="memdesc:aec0da8cf6b35ff35821b84d15ffad906"><td class="mdescLeft">&#160;</td><td class="mdescRight">Child node less than this.  <a href="structbstreenode.html#aec0da8cf6b35ff35821b84d15ffad906">More...</a><br /></td></tr>
+<tr class="memdesc:aec0da8cf6b35ff35821b84d15ffad906"><td class="mdescLeft">&#160;</td><td class="mdescRight">Child node less than this node.  <a href="structbstreenode.html#aec0da8cf6b35ff35821b84d15ffad906">More...</a><br /></td></tr>
 <tr class="separator:aec0da8cf6b35ff35821b84d15ffad906"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28ae894097a40e06e44ca9b6e8323ef1"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structbstreenode.html">bstreenode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbstreenode.html#a28ae894097a40e06e44ca9b6e8323ef1">childgreater</a></td></tr>
-<tr class="memdesc:a28ae894097a40e06e44ca9b6e8323ef1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Child node greater than this.  <a href="structbstreenode.html#a28ae894097a40e06e44ca9b6e8323ef1">More...</a><br /></td></tr>
+<tr class="memdesc:a28ae894097a40e06e44ca9b6e8323ef1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Child node greater than this node.  <a href="structbstreenode.html#a28ae894097a40e06e44ca9b6e8323ef1">More...</a><br /></td></tr>
 <tr class="separator:a28ae894097a40e06e44ca9b6e8323ef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -133,7 +133,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Child node greater than this. </p>
+<p>Child node greater than this node. </p>
 
 </div>
 </div>
@@ -149,7 +149,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Child node less than this. </p>
+<p>Child node less than this node. </p>
 
 </div>
 </div>
@@ -166,6 +166,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The node counter. </p>
+<p>If duplicates are allowed in the tree then this counter keeps track of the additions and deletions of this node. </p>
 
 </div>
 </div>
@@ -186,7 +187,7 @@ Data Fields</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>src/prg/c/inc/<a class="el" href="bstree_8h_source.html">bstree.h</a></li>
+<li>src/prg/c/inc/libmgec/<a class="el" href="mge-bstree_8h_source.html">mge-bstree.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
