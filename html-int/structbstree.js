@@ -1,6 +1,6 @@
 var structbstree =
 [
-    [ "comp", "structbstree.html#a4028e149ea0b364afc10a83eee6440fd", null ],
+    [ "comp", "structbstree.html#aafce86f8933c1259fb9698e700d55378", null ],
     [ "count_total", "structbstree.html#aacf29526945e0158819de7dc0624412b", null ],
     [ "node_total", "structbstree.html#a215aa978cf35bba1b267863484c9b026", null ],
     [ "root", "structbstree.html#ad549571392d4f2dbae0975d41d030206", null ],

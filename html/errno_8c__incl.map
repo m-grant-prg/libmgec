@@ -1,9 +1,9 @@
 <map id="src/prg/c/src/libmgec/errors/errno.c" name="src/prg/c/src/libmgec/errors/errno.c">
-<area shape="rect" id="node1" title=" " alt="" coords="137,5,293,47"/>
+<area shape="rect" id="node1" title="Defines mge error variables." alt="" coords="137,5,293,47"/>
 <area shape="rect" id="node2" title=" " alt="" coords="5,95,80,121"/>
 <area shape="rect" id="node3" title=" " alt="" coords="105,95,189,121"/>
-<area shape="rect" id="node4" href="$libmgec_8h.html" title=" " alt="" coords="213,95,355,121"/>
-<area shape="rect" id="node6" href="$mge-errno_8h.html" title=" " alt="" coords="379,95,538,121"/>
-<area shape="rect" id="node5" href="$mge-portability_8h.html" title=" " alt="" coords="193,169,383,196"/>
+<area shape="rect" id="node4" href="$libmgec_8h.html" title="Header file for the libmgec shared library." alt="" coords="213,95,355,121"/>
+<area shape="rect" id="node6" href="$mge-errno_8h.html" title="Details for mge_errno system." alt="" coords="379,95,538,121"/>
+<area shape="rect" id="node5" href="$mge-portability_8h.html" title="Header file to ease portability." alt="" coords="193,169,383,196"/>
 <area shape="rect" id="node7" title=" " alt="" coords="411,169,507,196"/>
 </map>

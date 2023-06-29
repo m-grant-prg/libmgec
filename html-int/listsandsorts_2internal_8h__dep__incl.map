@@ -1,4 +1,4 @@
 <map id="src/prg/c/src/libmgec/listsandsorts/internal.h" name="src/prg/c/src/libmgec/listsandsorts/internal.h">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,180,47"/>
-<area shape="rect" id="node2" href="$bstree_8c.html" title=" " alt="" coords="10,95,175,136"/>
+<area shape="rect" id="node1" title="Non&#45;public header file for binary search trees in the libmgec shared library." alt="" coords="5,5,180,47"/>
+<area shape="rect" id="node2" href="$bstree_8c.html" title="Builds, searches and releases a binary search tree." alt="" coords="10,95,175,136"/>
 </map>

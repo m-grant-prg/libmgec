@@ -1,6 +1,6 @@
 <map id="src/prg/c/inc/libmgec/mge&#45;buffer.h" name="src/prg/c/inc/libmgec/mge&#45;buffer.h">
-<area shape="rect" id="node1" title=" " alt="" coords="121,5,277,47"/>
-<area shape="rect" id="node2" href="$mge-message_8h.html" title=" " alt="" coords="5,95,161,136"/>
-<area shape="rect" id="node3" href="$message_8c.html" title=" " alt="" coords="63,184,219,225"/>
-<area shape="rect" id="node4" href="$buffer_8c.html" title=" " alt="" coords="237,95,393,136"/>
+<area shape="rect" id="node1" title="Header file for buffer processing." alt="" coords="121,5,277,47"/>
+<area shape="rect" id="node2" href="$mge-message_8h.html" title="Header file for message processing." alt="" coords="5,95,161,136"/>
+<area shape="rect" id="node3" href="$message_8c.html" title="Message processing functions." alt="" coords="63,184,219,225"/>
+<area shape="rect" id="node4" href="$buffer_8c.html" title="Buffer processing functions." alt="" coords="237,95,393,136"/>
 </map>

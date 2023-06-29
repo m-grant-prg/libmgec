@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['find_5fbst_5fnode_44',['find_bst_node',['../mge-bstree_8h.html#a486be2ec0744640dcabe6323304db158',1,'find_bst_node(const struct bstree *tree, const void *searchobj):&#160;bstree.c'],['../bstree_8c.html#a486be2ec0744640dcabe6323304db158',1,'find_bst_node(const struct bstree *tree, const void *searchobj):&#160;bstree.c']]],
+  ['find_5fbst_5fnode_44',['find_bst_node',['../bstree_8c.html#a486be2ec0744640dcabe6323304db158',1,'find_bst_node(const struct bstree *tree, const void *searchobj):&#160;bstree.c'],['../mge-bstree_8h.html#a486be2ec0744640dcabe6323304db158',1,'find_bst_node(const struct bstree *tree, const void *searchobj):&#160;bstree.c']]],
   ['find_5fnext_5fbst_5fnode_45',['find_next_bst_node',['../mge-bstree_8h.html#a1b5f206d0d1a1681835b3f7bfbf0f431',1,'find_next_bst_node(const struct bstree *tree, const void *searchobj):&#160;bstree.c'],['../bstree_8c.html#a1b5f206d0d1a1681835b3f7bfbf0f431',1,'find_next_bst_node(const struct bstree *tree, const void *searchobj):&#160;bstree.c']]],
   ['find_5fnext_5fdll_5fnode_46',['find_next_dll_node',['../dllist_8h.html#a70d069806e91b1e2c74faeef1bc6b3c7',1,'dllist.h']]],
   ['find_5fnext_5fnode_47',['find_next_node',['../bstree_8c.html#af684a6b91402abc2f0aafadd8ac8ed0b',1,'bstree.c']]],

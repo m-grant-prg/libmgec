@@ -1,50 +1,52 @@
 /*
-@licstart  The following is the entire license notice for the
-JavaScript code in this file.
+ @licstart  The following is the entire license notice for the JavaScript code in this file.
 
-Copyright (C) 1997-2019 by Dimitri van Heesch
+ The MIT License (MIT)
 
-This program is free software; you can redistribute it and/or modify
-it under the terms of version 2 of the GNU General Public License as published by
-the Free Software Foundation
+ Copyright (C) 1997-2020 by Dimitri van Heesch
 
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-GNU General Public License for more details.
+ Permission is hereby granted, free of charge, to any person obtaining a copy of this software
+ and associated documentation files (the "Software"), to deal in the Software without restriction,
+ including without limitation the rights to use, copy, modify, merge, publish, distribute,
+ sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
 
-You should have received a copy of the GNU General Public License along
-with this program; if not, write to the Free Software Foundation, Inc.,
-51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+ The above copyright notice and this permission notice shall be included in all copies or
+ substantial portions of the Software.
 
-@licend  The above is the entire license notice
-for the JavaScript code in this file
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING
+ BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+ DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+ @licend  The above is the entire license notice for the JavaScript code in this file
 */
 var NAVTREE =
 [
   [ "MGE General C Library - API Documentation", "index.html", [
     [ "Overview", "index.html", null ],
-    [ "Errors", "md_docs_doxygen_src_300-errors.html", [
-      [ "Messages", "md_docs_doxygen_src_300-errors.html#errormsgs", null ],
-      [ "Usage", "md_docs_doxygen_src_300-errors.html#errorusage", null ],
-      [ "Helper Functions", "md_docs_doxygen_src_300-errors.html#errorfunctions", [
-        [ "mge_strerror()", "md_docs_doxygen_src_300-errors.html#mgestrerror", null ]
+    [ "Errors", "md_docs_doxygen_src_300_errors.html", [
+      [ "Messages", "md_docs_doxygen_src_300_errors.html#errormsgs", null ],
+      [ "Usage", "md_docs_doxygen_src_300_errors.html#errorusage", null ],
+      [ "Helper Functions", "md_docs_doxygen_src_300_errors.html#errorfunctions", [
+        [ "mge_strerror()", "md_docs_doxygen_src_300_errors.html#mgestrerror", null ]
       ] ]
     ] ],
-    [ "Lists and Sorts", "md_docs_doxygen_src_400-listsandsorts.html", null ],
-    [ "Memory", "md_docs_doxygen_src_500-memory.html", [
-      [ "mg_realloc", "md_docs_doxygen_src_500-memory.html#mgrealloc", null ]
+    [ "Lists and Sorts", "md_docs_doxygen_src_400_listsandsorts.html", null ],
+    [ "Memory", "md_docs_doxygen_src_500_memory.html", [
+      [ "mg_realloc", "md_docs_doxygen_src_500_memory.html#mgrealloc", null ]
     ] ],
-    [ "Message Buffers and Messages", "md_docs_doxygen_src_buf-msg_200-buf-msg.html", [
-      [ "Overview", "md_docs_doxygen_src_buf-msg_200-buf-msg.html#overview", null ],
-      [ "Buffers", "md_docs_doxygen_src_buf-msg_200-buf-msg.html#buf", [
-        [ "concat_buf()", "md_docs_doxygen_src_buf-msg_200-buf-msg.html#concatbuf", null ],
-        [ "trim_buf()", "md_docs_doxygen_src_buf-msg_200-buf-msg.html#trimbuf", null ]
+    [ "Message Buffers and Messages", "md_docs_doxygen_src_buf_msg_200_buf_msg.html", [
+      [ "Overview", "md_docs_doxygen_src_buf_msg_200_buf_msg.html#buffers_messages_overview", null ],
+      [ "Buffers", "md_docs_doxygen_src_buf_msg_200_buf_msg.html#buf", [
+        [ "concat_buf()", "md_docs_doxygen_src_buf_msg_200_buf_msg.html#concatbuf", null ],
+        [ "trim_buf()", "md_docs_doxygen_src_buf_msg_200_buf_msg.html#trimbuf", null ]
       ] ],
-      [ "Messages", "md_docs_doxygen_src_buf-msg_200-buf-msg.html#messages", [
-        [ "Functions", "md_docs_doxygen_src_buf-msg_200-buf-msg.html#msgfunctions", [
-          [ "pull_msg()", "md_docs_doxygen_src_buf-msg_200-buf-msg.html#pullmsg", null ],
-          [ "clear_msg()", "md_docs_doxygen_src_buf-msg_200-buf-msg.html#clearmsg", null ]
+      [ "Messages", "md_docs_doxygen_src_buf_msg_200_buf_msg.html#messages", [
+        [ "Functions", "md_docs_doxygen_src_buf_msg_200_buf_msg.html#msgfunctions", [
+          [ "pull_msg()", "md_docs_doxygen_src_buf_msg_200_buf_msg.html#pullmsg", null ],
+          [ "clear_msg()", "md_docs_doxygen_src_buf_msg_200_buf_msg.html#clearmsg", null ]
         ] ]
       ] ]
     ] ],
