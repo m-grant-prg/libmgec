@@ -17,7 +17,7 @@
 #########################################################################
 #									#
 # Script ID: docs/doxygen/Makefile.am					#
-# Author: Copyright (C) 2017-2022  Mark Grant				#
+# Author: Copyright (C) 2017-2023  Mark Grant				#
 #									#
 # Released under the GPLv3 only.					#
 # SPDX-License-Identifier: GPL-3.0-only					#
@@ -64,6 +64,9 @@
 #				tarballs can be left if git describe	#
 #				changes and no make clean has been	#
 #				performed.				#
+# 28/10/2023	MG	1.1.8	Doxygen can no longer incorporate files	#
+#				in the dia format. They must now be	#
+#				exported to png format.			#
 #									#
 #########################################################################
 
@@ -248,6 +251,8 @@ EGREP = /usr/bin/grep -E
 ETAGS = etags
 EXEEXT = 
 FGREP = /usr/bin/grep -F
+GL_CFLAG_ALLOW_WARNINGS = -Wno-error
+GL_CFLAG_GNULIB_WARNINGS =  -Wno-cast-qual -Wno-conversion -Wno-float-equal -Wno-sign-compare -Wno-undef -Wno-unused-function -Wno-unused-parameter -Wno-float-conversion -Wimplicit-fallthrough -Wno-pedantic -Wno-sign-conversion -Wno-type-limits -Wno-unsuffixed-float-constants
 GREP = /usr/bin/grep
 INSTALL = /usr/bin/install -c
 INSTALL_DATA = ${INSTALL} -m 644
@@ -284,10 +289,10 @@ OTOOL64 =
 PACKAGE = libmgec
 PACKAGE_BUGREPORT = m.grant.prg@gmail.com
 PACKAGE_NAME = MGE General C Library
-PACKAGE_STRING = MGE General C Library 1.8.0
+PACKAGE_STRING = MGE General C Library 1.8.1
 PACKAGE_TARNAME = libmgec
 PACKAGE_URL = 
-PACKAGE_VERSION = 1.8.0
+PACKAGE_VERSION = 1.8.1
 PATH_SEPARATOR = :
 RANLIB = ranlib
 SCAN_BUILD = 
@@ -298,7 +303,7 @@ STRIP = strip
 TAR = yes
 TXT2MAN = yes
 TXT2MANWRAP = yes
-VERSION = 1.8.0
+VERSION = 1.8.1
 abs_builddir = /home/runner/work/libmgec/libmgec/docs/doxygen
 abs_srcdir = /home/runner/work/libmgec/libmgec/docs/doxygen
 abs_top_builddir = /home/runner/work/libmgec/libmgec
@@ -326,8 +331,10 @@ docdir = ${datarootdir}/doc/${PACKAGE_TARNAME}
 dvidir = ${docdir}
 edit = sed 		-e 's|@pkgversion@|$(pkgversion)|g' 		-e 's|@docbaseloc@|$(docbaseloc)|g' 		-e 's|@CC@|$(CC)|g' 		-e 's|@prefix@|$(prefix)|g' 		-e 's|@exec_prefix@|$(exec_prefix)|g' 		-e 's|@bindir@|$(bindir)|g' 		-e 's|@sbindir@|$(sbindir)|g' 		-e 's|@libexecdir@|$(libexecdir)|g' 		-e 's|@libdir@|$(libdir)|g' 		-e 's|@sysconfdir@|$(sysconfdir)|g' 		-e 's|@sharedstatedir@|$(sharedstatedir)|g' 		-e 's|@localstatedir@|$(localstatedir)|g' 		-e 's|@runstatedir@|$(runstatedir)|g' 		-e 's|@includedir@|$(includedir)|g' 		-e 's|@oldincludedir@|$(oldincludedir)|g' 		-e 's|@datarootdir@|$(datarootdir)|g' 		-e 's|@localedir@|$(localedir)|g' 		-e 's|@datadir@|$(datadir)|g' 		-e 's|@mandir@|$(mandir)|g' 		-e 's|@infodir@|$(infodir)|g' 		-e 's|@docdir@|$(docdir)|g' 		-e 's|@htmldir@|$(htmldir)|g' 		-e 's|@dvidir@|$(dvidir)|g' 		-e 's|@pdfdir@|$(pdfdir)|g' 		-e 's|@psdir@|$(psdir)|g' 		-e 's|@lispdir@|$(lispdir)|g' 		-e 's|@pkgdatadir@|$(pkgdatadir)|g' 		-e 's|@pkgincludedir@|$(pkgincludedir)|g' 		-e 's|@pkglibdir@|$(pkglibdir)|g' 		-e 's|@pkglibexecdir@|$(pkglibexecdir)|g'
 exec_prefix = ${prefix}
+gl_LIBOBJDEPS = 
 gl_LIBOBJS = 
 gl_LTLIBOBJS = 
+gltests_LIBOBJDEPS = 
 gltests_LIBOBJS = 
 gltests_LTLIBOBJS = 
 gltests_WITNESS = IN_LIBMGEC_GNULIB_TESTS
@@ -350,7 +357,7 @@ mandir = ${datarootdir}/man
 mkdir_p = $(MKDIR_P)
 oldincludedir = /usr/include
 pdfdir = ${docdir}
-pkgversion = 1.8.0
+pkgversion = 1.8.1
 prefix = /usr/local
 program_transform_name = s,x,x,
 psdir = ${docdir}
@@ -384,8 +391,8 @@ int_DATA = $(intdocpkg)
 # installed. Registering is dependent on ATONLY.
 docbasedir = ${prefix}/share/doc-base
 docbase_DATA = libmgec libmgec-int
-EXTRA_DIST = $(docpkg) $(intdocpkg) $(srcdir)/src $(srcdir)/libmgec.in \
-	     $(srcdir)/libmgec-int.in
+EXTRA_DIST = $(docpkg) $(intdocpkg) $(srcdir)/src $(srcdir)/gen-img \
+	     $(srcdir)/libmgec.in $(srcdir)/libmgec-int.in
 
 CLEANFILES = doxywarn.txt doxygen.stamp doxygen1.stamp libmgec libmgec-int
 all: all-am
@@ -660,6 +667,9 @@ $(docpkg): doxygen.stamp
 	tar -chz --format=posix -f $@ html
 
 doxygen.stamp: Doxyfile $(srcdepends)
+	cd $(srcdir)/gen-img/buf-msg \
+		&& dia ../../src/buf-msg/*.dia --filter=png \
+		&& cd -
 	if $(AM_V_P); then \
 		DOXYGEN_QUIET=NO \
 			DOXYGEN_PROJECT_NAME="MGE General C Library - API Documentation" \
@@ -675,12 +685,16 @@ doxygen.stamp: Doxyfile $(srcdepends)
 			DOXYGEN_EXCLUDE_PATTERNS="*internal*" \
 			doxygen $< ; \
 	fi
+	rm -f $(srcdir)/gen-img/buf-msg/*
 	echo Timestamp > $@
 
 $(intdocpkg): doxygen1.stamp
 	tar -chz --format=posix -f $@ html-int
 
 doxygen1.stamp: Doxyfile $(srcdepends)
+	cd $(srcdir)/gen-img/buf-msg \
+		&& dia ../../src/buf-msg/*.dia --filter=png \
+		&& cd -
 	if $(AM_V_P); then \
 		DOXYGEN_QUIET=NO \
 			DOXYGEN_PROJECT_NAME="MGE General C Library - Full Internal Documentation" \
@@ -696,6 +710,7 @@ doxygen1.stamp: Doxyfile $(srcdepends)
 			DOXYGEN_EXCLUDE_PATTERNS= \
 			doxygen $< ; \
 	fi
+	rm -rf $(srcdir)/gen-img/buf-msg/*
 	echo Timestamp > $@
 
 # Create a target to facilitate make doxygen
