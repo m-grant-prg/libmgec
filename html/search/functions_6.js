@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['mg_5frealloc_194',['mg_realloc',['../mge-memory_8h.html#ab44db1d9231ab548a5d26e1483d54400',1,'mg_realloc(char *mem_ptr, const size_t mem_sz):&#160;memory.c'],['../memory_8c.html#aa3db0a40c0c4933a9683ba635a7324a7',1,'mg_realloc(char *mem_ptr, const size_t mem_sz):&#160;memory.c']]],
-  ['mge_5fstrerror_195',['mge_strerror',['../mge-errno_8h.html#ad662b362519a8e8f9caf7c6462c38e37',1,'mge_strerror(const int mge_err):&#160;error.c'],['../error_8c.html#ad662b362519a8e8f9caf7c6462c38e37',1,'mge_strerror(const int mge_err):&#160;error.c']]]
+  ['libmgec_5fprint_5fpkg_5fversion_190',['libmgec_print_pkg_version',['../libmgec_8h.html#af0b3a963e96593985ba1aecacd3b012a',1,'libmgec_print_pkg_version(void):&#160;version.c'],['../version_8c.html#af0b3a963e96593985ba1aecacd3b012a',1,'libmgec_print_pkg_version(void):&#160;version.c']]],
+  ['libmgec_5fprint_5fsrc_5fversion_191',['libmgec_print_src_version',['../libmgec_8h.html#adb87a76221ef78d974c9c89cf1bfa7f4',1,'libmgec_print_src_version(void):&#160;version.c'],['../version_8c.html#adb87a76221ef78d974c9c89cf1bfa7f4',1,'libmgec_print_src_version(void):&#160;version.c']]]
 ];

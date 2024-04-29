@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MGE General C Library - Full Internal Documentation
-   &#160;<span id="projectnumber">v1.8.1</span>
+   &#160;<span id="projectnumber">v1.8.2</span>
    </div>
    <div id="projectbrief">Library of general C functions.</div>
   </td>
@@ -88,70 +88,40 @@ $(document).ready(function(){initNavTree('listsandsorts_2internal_8h_source.html
 </div><!--header-->
 <div class="contents">
 <a href="listsandsorts_2internal_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">/* **********************************************************************</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> *                                  *</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * Changelog                                *</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> *                                  *</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * Date     Author  Version Description             *</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> *                                  *</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> * 04/11/2017   MG  1.0.1   Started ChangeLog.          *</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> * 09/11/2017   MG  1.0.2   Add SPDX license tag.           *</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> * 02/01/2018   MG  1.0.3   Move to new source directory structure. *</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> * 19/05/2018   MG  1.0.4   Include dllist and sllist prototypes.   *</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> * 20/05/2018   MG  1.0.5   Add re-inclusion prevention #defines.   *</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"> * 20/05/2018   MG  1.0.6   Standardise on define name format.  *</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment"> * 02/06/2018   MG  1.0.7   Add support for counter and node totals *</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"> *              for a tree.             *</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"> * 09/06/2019   MG  1.0.8   clang-format coding style changes.  *</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment"> * 12/07/2019   MG  1.0.9   Separate combined header file into  *</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment"> *              specific individual files.      *</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment"> * 03/12/2021   MG  1.0.10  Tighten SPDX tag.           *</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment"> * 16/09/2022   MG  1.0.11  Rename of portability.h         *</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment"> *              Rename of bstree.h          *</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment"> *              Add stddef.h for size_t.        *</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment"> *              Move static function declarations to .c *</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment"> *              file.                   *</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment"> *              Test tracing elements moved here as *</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment"> *              they are not part of the API.       *</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment"> *              Rename internal.h           *</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment"> *                                  *</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment"> ************************************************************************</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#ifndef INTERNAL_H</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#define INTERNAL_H</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="mge-bstree_8h.html">libmgec/mge-bstree.h</a>&gt;</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="mge-portability_8h.html">libmgec/mge-portability.h</a>&gt;</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#include &lt;stddef.h&gt;</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<a class="code" href="mge-portability_8h.html#a0c2d4d01206892eecb3fd695f45dec2d">BEGIN_C_DECLS</a></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="structbstobjcoord.html">   56</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structbstobjcoord.html">bstobjcoord</a> {</div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="structbstobjcoord.html#a077376d12464f945e2414d5499c79b3f">   57</a></span>&#160;    <span class="keywordtype">void</span> *<a class="code" href="structbstobjcoord.html#a077376d12464f945e2414d5499c79b3f">object</a>; </div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="structbstobjcoord.html#ad43c3812e6d13e0518d9f8b8f463ffcf">   58</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structbstobjcoord.html#ad43c3812e6d13e0518d9f8b8f463ffcf">count</a>;    </div>
-<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="structbstobjcoord.html#a9158baa20c9c74fb5df5905386d9c4c8">   59</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structbstobjcoord.html#a9158baa20c9c74fb5df5905386d9c4c8">xdir</a>;     </div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="structbstobjcoord.html#ad26d97cdff72b7baf09cc7dab08ee6d7">   60</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structbstobjcoord.html#ad26d97cdff72b7baf09cc7dab08ee6d7">ydir</a>;     </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;};</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">struct </span><a class="code" href="structbstobjcoord.html">bstobjcoord</a> *<a class="code" href="listsandsorts_2internal_8h.html#a1e767bbbe06c82e3774caaf88f4ceeec">find_next_bst_node_trace</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code" href="structbstree.html">bstree</a> *tree,</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                         <span class="keyword">struct</span> <a class="code" href="structbstobjcoord.html">bstobjcoord</a> *searchobj);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<a class="code" href="mge-portability_8h.html#ac17320fed4b28122bc4977a087b131dd">END_C_DECLS</a></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* ndef INTERNAL_H */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="alistsandsorts_2internal_8h_html_a1e767bbbe06c82e3774caaf88f4ceeec"><div class="ttname"><a href="listsandsorts_2internal_8h.html#a1e767bbbe06c82e3774caaf88f4ceeec">find_next_bst_node_trace</a></div><div class="ttdeci">struct bstobjcoord * find_next_bst_node_trace(const struct bstree *tree, struct bstobjcoord *searchobj)</div><div class="ttdoc">Find and return the next object and it's coordinates in the bst 'tree'.</div><div class="ttdef"><b>Definition:</b> bstree.c:832</div></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#ifndef INTERNAL_H</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#define INTERNAL_H</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="mge-bstree_8h.html">libmgec/mge-bstree.h</a>&gt;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="mge-portability_8h.html">libmgec/mge-portability.h</a>&gt;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;stddef.h&gt;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<a class="code" href="mge-portability_8h.html#a0c2d4d01206892eecb3fd695f45dec2d">BEGIN_C_DECLS</a></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="structbstobjcoord.html">   26</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structbstobjcoord.html">bstobjcoord</a> {</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="structbstobjcoord.html#a077376d12464f945e2414d5499c79b3f">   27</a></span>&#160;    <span class="keywordtype">void</span> *<a class="code" href="structbstobjcoord.html#a077376d12464f945e2414d5499c79b3f">object</a>; </div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="structbstobjcoord.html#ad43c3812e6d13e0518d9f8b8f463ffcf">   28</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structbstobjcoord.html#ad43c3812e6d13e0518d9f8b8f463ffcf">count</a>;    </div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="structbstobjcoord.html#a9158baa20c9c74fb5df5905386d9c4c8">   29</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structbstobjcoord.html#a9158baa20c9c74fb5df5905386d9c4c8">xdir</a>;     </div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="structbstobjcoord.html#ad26d97cdff72b7baf09cc7dab08ee6d7">   30</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structbstobjcoord.html#ad26d97cdff72b7baf09cc7dab08ee6d7">ydir</a>;     </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;};</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">struct </span><a class="code" href="structbstobjcoord.html">bstobjcoord</a> *<a class="code" href="listsandsorts_2internal_8h.html#a1e767bbbe06c82e3774caaf88f4ceeec">find_next_bst_node_trace</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code" href="structbstree.html">bstree</a> *tree,</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                         <span class="keyword">struct</span> <a class="code" href="structbstobjcoord.html">bstobjcoord</a> *searchobj);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<a class="code" href="mge-portability_8h.html#ac17320fed4b28122bc4977a087b131dd">END_C_DECLS</a></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* ndef INTERNAL_H */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="alistsandsorts_2internal_8h_html_a1e767bbbe06c82e3774caaf88f4ceeec"><div class="ttname"><a href="listsandsorts_2internal_8h.html#a1e767bbbe06c82e3774caaf88f4ceeec">find_next_bst_node_trace</a></div><div class="ttdeci">struct bstobjcoord * find_next_bst_node_trace(const struct bstree *tree, struct bstobjcoord *searchobj)</div><div class="ttdoc">Find and return the next object and it's coordinates in the bst 'tree'.</div><div class="ttdef"><b>Definition:</b> bstree.c:762</div></div>
 <div class="ttc" id="amge-bstree_8h_html"><div class="ttname"><a href="mge-bstree_8h.html">mge-bstree.h</a></div><div class="ttdoc">Binary search tree header file.</div></div>
 <div class="ttc" id="amge-portability_8h_html"><div class="ttname"><a href="mge-portability_8h.html">mge-portability.h</a></div><div class="ttdoc">Header file to ease portability.</div></div>
-<div class="ttc" id="amge-portability_8h_html_a0c2d4d01206892eecb3fd695f45dec2d"><div class="ttname"><a href="mge-portability_8h.html#a0c2d4d01206892eecb3fd695f45dec2d">BEGIN_C_DECLS</a></div><div class="ttdeci">#define BEGIN_C_DECLS</div><div class="ttdoc">BEGIN_C_DECLS should be used at the beginning of declarations so that C++ compilers don't mangle thei...</div><div class="ttdef"><b>Definition:</b> mge-portability.h:48</div></div>
-<div class="ttc" id="amge-portability_8h_html_ac17320fed4b28122bc4977a087b131dd"><div class="ttname"><a href="mge-portability_8h.html#ac17320fed4b28122bc4977a087b131dd">END_C_DECLS</a></div><div class="ttdeci">#define END_C_DECLS</div><div class="ttdoc">Use END_C_DECLS at the end of C declarations.</div><div class="ttdef"><b>Definition:</b> mge-portability.h:52</div></div>
-<div class="ttc" id="astructbstobjcoord_html"><div class="ttname"><a href="structbstobjcoord.html">bstobjcoord</a></div><div class="ttdoc">Node coordinates for test tracing.</div><div class="ttdef"><b>Definition:</b> internal.h:56</div></div>
-<div class="ttc" id="astructbstobjcoord_html_a077376d12464f945e2414d5499c79b3f"><div class="ttname"><a href="structbstobjcoord.html#a077376d12464f945e2414d5499c79b3f">bstobjcoord::object</a></div><div class="ttdeci">void * object</div><div class="ttdoc">The object.</div><div class="ttdef"><b>Definition:</b> internal.h:57</div></div>
-<div class="ttc" id="astructbstobjcoord_html_a9158baa20c9c74fb5df5905386d9c4c8"><div class="ttname"><a href="structbstobjcoord.html#a9158baa20c9c74fb5df5905386d9c4c8">bstobjcoord::xdir</a></div><div class="ttdeci">int xdir</div><div class="ttdoc">The x coordinate.</div><div class="ttdef"><b>Definition:</b> internal.h:59</div></div>
-<div class="ttc" id="astructbstobjcoord_html_ad26d97cdff72b7baf09cc7dab08ee6d7"><div class="ttname"><a href="structbstobjcoord.html#ad26d97cdff72b7baf09cc7dab08ee6d7">bstobjcoord::ydir</a></div><div class="ttdeci">int ydir</div><div class="ttdoc">The y coordinate.</div><div class="ttdef"><b>Definition:</b> internal.h:60</div></div>
-<div class="ttc" id="astructbstobjcoord_html_ad43c3812e6d13e0518d9f8b8f463ffcf"><div class="ttname"><a href="structbstobjcoord.html#ad43c3812e6d13e0518d9f8b8f463ffcf">bstobjcoord::count</a></div><div class="ttdeci">int count</div><div class="ttdoc">The node counter.</div><div class="ttdef"><b>Definition:</b> internal.h:58</div></div>
-<div class="ttc" id="astructbstree_html"><div class="ttname"><a href="structbstree.html">bstree</a></div><div class="ttdoc">Binary search tree.</div><div class="ttdef"><b>Definition:</b> mge-bstree.h:74</div></div>
+<div class="ttc" id="amge-portability_8h_html_a0c2d4d01206892eecb3fd695f45dec2d"><div class="ttname"><a href="mge-portability_8h.html#a0c2d4d01206892eecb3fd695f45dec2d">BEGIN_C_DECLS</a></div><div class="ttdeci">#define BEGIN_C_DECLS</div><div class="ttdoc">BEGIN_C_DECLS should be used at the beginning of declarations so that C++ compilers don't mangle thei...</div><div class="ttdef"><b>Definition:</b> mge-portability.h:30</div></div>
+<div class="ttc" id="amge-portability_8h_html_ac17320fed4b28122bc4977a087b131dd"><div class="ttname"><a href="mge-portability_8h.html#ac17320fed4b28122bc4977a087b131dd">END_C_DECLS</a></div><div class="ttdeci">#define END_C_DECLS</div><div class="ttdoc">Use END_C_DECLS at the end of C declarations.</div><div class="ttdef"><b>Definition:</b> mge-portability.h:34</div></div>
+<div class="ttc" id="astructbstobjcoord_html"><div class="ttname"><a href="structbstobjcoord.html">bstobjcoord</a></div><div class="ttdoc">Node coordinates for test tracing.</div><div class="ttdef"><b>Definition:</b> internal.h:26</div></div>
+<div class="ttc" id="astructbstobjcoord_html_a077376d12464f945e2414d5499c79b3f"><div class="ttname"><a href="structbstobjcoord.html#a077376d12464f945e2414d5499c79b3f">bstobjcoord::object</a></div><div class="ttdeci">void * object</div><div class="ttdoc">The object.</div><div class="ttdef"><b>Definition:</b> internal.h:27</div></div>
+<div class="ttc" id="astructbstobjcoord_html_a9158baa20c9c74fb5df5905386d9c4c8"><div class="ttname"><a href="structbstobjcoord.html#a9158baa20c9c74fb5df5905386d9c4c8">bstobjcoord::xdir</a></div><div class="ttdeci">int xdir</div><div class="ttdoc">The x coordinate.</div><div class="ttdef"><b>Definition:</b> internal.h:29</div></div>
+<div class="ttc" id="astructbstobjcoord_html_ad26d97cdff72b7baf09cc7dab08ee6d7"><div class="ttname"><a href="structbstobjcoord.html#ad26d97cdff72b7baf09cc7dab08ee6d7">bstobjcoord::ydir</a></div><div class="ttdeci">int ydir</div><div class="ttdoc">The y coordinate.</div><div class="ttdef"><b>Definition:</b> internal.h:30</div></div>
+<div class="ttc" id="astructbstobjcoord_html_ad43c3812e6d13e0518d9f8b8f463ffcf"><div class="ttname"><a href="structbstobjcoord.html#ad43c3812e6d13e0518d9f8b8f463ffcf">bstobjcoord::count</a></div><div class="ttdeci">int count</div><div class="ttdoc">The node counter.</div><div class="ttdef"><b>Definition:</b> internal.h:28</div></div>
+<div class="ttc" id="astructbstree_html"><div class="ttname"><a href="structbstree.html">bstree</a></div><div class="ttdoc">Binary search tree.</div><div class="ttdef"><b>Definition:</b> mge-bstree.h:41</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

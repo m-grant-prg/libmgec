@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MGE General C Library - API Documentation
-   &#160;<span id="projectnumber">v1.8.1</span>
+   &#160;<span id="projectnumber">v1.8.2</span>
    </div>
    <div id="projectbrief">Library of general C functions.</div>
   </td>
@@ -88,80 +88,53 @@ $(document).ready(function(){initNavTree('sllist_8h_source.html',''); initResiza
 </div><!--header-->
 <div class="contents">
 <a href="sllist_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">/* **********************************************************************</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> *                                  *</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * Changelog                                *</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> *                                  *</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> * Date     Author  Version Description             *</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> *                                  *</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> * 02/05/2016   MG  1.0.1   First release.              *</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> * 16/07/2016   MG  1.0.2   Move towards kernel coding style.   *</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> * 17/07/2016   MG  1.0.3   Remove function prototype comments. *</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> * 05/11/2017   MG  1.0.4   Add Doxygen comments.           *</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"> * 09/11/2017   MG  1.0.5   Add SPDX license tag.           *</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment"> * 02/01/2018   MG  1.0.6   Move to new source directory structure. *</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"> * 05/07/2019   MG  1.0.7   clang-format coding style changes.  *</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"> *              Extract find_next_sll_node from c file  *</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment"> *              and make static inline.         *</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment"> *              Add for_each_sll_node macro.        *</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment"> *              Improve parameter naming.       *</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment"> *              %s/add_sll_node/add_tail_sll_node/g *</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment"> *              Add add_head_sll_node           *</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment"> *              Add find_sll_node.          *</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment"> * 03/12/2021   MG  1.0.8   Tighten SPDX tag.           *</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment"> * 15/09/2022   MG  1.0.9   Rename of portability.h         *</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment"> *              Add stddef.h for size_t.        *</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment"> *                                  *</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment"> ************************************************************************</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#ifndef SLLIST_H</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#define SLLIST_H</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="mge-portability_8h.html">libmgec/mge-portability.h</a>&gt;</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#include &lt;stddef.h&gt;</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<a class="code" href="mge-portability_8h.html#a0c2d4d01206892eecb3fd695f45dec2d">BEGIN_C_DECLS</a></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="structsllistnode.html">   53</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structsllistnode.html">sllistnode</a> {</div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="structsllistnode.html#a077376d12464f945e2414d5499c79b3f">   54</a></span>&#160;    <span class="keywordtype">void</span> *<a class="code" href="structsllistnode.html#a077376d12464f945e2414d5499c79b3f">object</a>;        </div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="structsllistnode.html#a700fc56f215d3482e760ff98df3d5091">   55</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structsllistnode.html">sllistnode</a> *<a class="code" href="structsllistnode.html#a700fc56f215d3482e760ff98df3d5091">next</a>; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;};</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">struct </span><a class="code" href="structsllistnode.html">sllistnode</a> *<a class="code" href="sllist_8h.html#a1356c5e949848b0ef93f55b370e06fde">add_head_sll_node</a>(<span class="keyword">struct</span> <a class="code" href="structsllistnode.html">sllistnode</a> *head,</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                     <span class="keyword">const</span> <span class="keywordtype">void</span> *<span class="keywordtype">object</span>, <span class="keywordtype">size_t</span> objsize);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#ifndef SLLIST_H</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#define SLLIST_H</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="mge-portability_8h.html">libmgec/mge-portability.h</a>&gt;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;stddef.h&gt;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<a class="code" href="mge-portability_8h.html#a0c2d4d01206892eecb3fd695f45dec2d">BEGIN_C_DECLS</a></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="structsllistnode.html">   26</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structsllistnode.html">sllistnode</a> {</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="structsllistnode.html#a077376d12464f945e2414d5499c79b3f">   27</a></span>&#160;    <span class="keywordtype">void</span> *<a class="code" href="structsllistnode.html#a077376d12464f945e2414d5499c79b3f">object</a>;        </div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="structsllistnode.html#a700fc56f215d3482e760ff98df3d5091">   28</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structsllistnode.html">sllistnode</a> *<a class="code" href="structsllistnode.html#a700fc56f215d3482e760ff98df3d5091">next</a>; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;};</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">struct </span><a class="code" href="structsllistnode.html">sllistnode</a> *<a class="code" href="sllist_8h.html#a1356c5e949848b0ef93f55b370e06fde">add_head_sll_node</a>(<span class="keyword">struct</span> <a class="code" href="structsllistnode.html">sllistnode</a> *head,</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                     <span class="keyword">const</span> <span class="keywordtype">void</span> *<span class="keywordtype">object</span>, <span class="keywordtype">size_t</span> objsize);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">struct </span><a class="code" href="structsllistnode.html">sllistnode</a> *<a class="code" href="sllist_8h.html#aadd80af2686ad022c8d6039db6335e4f">add_tail_sll_node</a>(<span class="keyword">struct</span> <a class="code" href="structsllistnode.html">sllistnode</a> *head,</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                     <span class="keyword">const</span> <span class="keywordtype">void</span> *<span class="keywordtype">object</span>, <span class="keywordtype">size_t</span> objsize);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keywordtype">void</span> *<a class="code" href="sllist_8h.html#a654fb653880c80a6826074470046eaea">find_sll_node</a>(<span class="keyword">struct</span> <a class="code" href="structsllistnode.html">sllistnode</a> *head, <span class="keyword">const</span> <span class="keywordtype">void</span> *searchobj,</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <span class="keywordtype">int</span> (*comp)(<span class="keyword">const</span> <span class="keywordtype">void</span> *, <span class="keyword">const</span> <span class="keywordtype">void</span> *));</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="sllist_8h.html#a7ac0d7abf119f976b6576674e5b2125c">   46</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keyword">struct </span><a class="code" href="structsllistnode.html">sllistnode</a> *<a class="code" href="sllist_8h.html#a7ac0d7abf119f976b6576674e5b2125c">find_next_sll_node</a>(<span class="keyword">struct</span> <a class="code" href="structsllistnode.html">sllistnode</a> *focus)</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;{</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">return</span> focus-&gt;<a class="code" href="structsllistnode.html#a700fc56f215d3482e760ff98df3d5091">next</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="sllist_8h.html#a14eb7234d6883f947f6edfaf12465e98">   56</a></span>&#160;<span class="preprocessor">#define for_each_sll_node(focus, head) \</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">    for (focus = head; focus != NULL; focus = focus-&gt;next)</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">struct </span><a class="code" href="structsllistnode.html">sllistnode</a> *<a class="code" href="sllist_8h.html#aa58a9bafadb51fca2eede57d6e04f672">free_sllist</a>(<span class="keyword">struct</span> <a class="code" href="structsllistnode.html">sllistnode</a> *head);</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">struct </span><a class="code" href="structsllistnode.html">sllistnode</a> *<a class="code" href="sllist_8h.html#aadd80af2686ad022c8d6039db6335e4f">add_tail_sll_node</a>(<span class="keyword">struct</span> <a class="code" href="structsllistnode.html">sllistnode</a> *head,</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                     <span class="keyword">const</span> <span class="keywordtype">void</span> *<span class="keywordtype">object</span>, <span class="keywordtype">size_t</span> objsize);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keywordtype">void</span> *<a class="code" href="sllist_8h.html#a654fb653880c80a6826074470046eaea">find_sll_node</a>(<span class="keyword">struct</span> <a class="code" href="structsllistnode.html">sllistnode</a> *head, <span class="keyword">const</span> <span class="keywordtype">void</span> *searchobj,</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            <span class="keywordtype">int</span> (*comp)(<span class="keyword">const</span> <span class="keywordtype">void</span> *, <span class="keyword">const</span> <span class="keywordtype">void</span> *));</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="sllist_8h.html#a7ac0d7abf119f976b6576674e5b2125c">   73</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keyword">struct </span><a class="code" href="structsllistnode.html">sllistnode</a> *<a class="code" href="sllist_8h.html#a7ac0d7abf119f976b6576674e5b2125c">find_next_sll_node</a>(<span class="keyword">struct</span> <a class="code" href="structsllistnode.html">sllistnode</a> *focus)</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;{</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">return</span> focus-&gt;<a class="code" href="structsllistnode.html#a700fc56f215d3482e760ff98df3d5091">next</a>;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="sllist_8h.html#a14eb7234d6883f947f6edfaf12465e98">   83</a></span>&#160;<span class="preprocessor">#define for_each_sll_node(focus, head) \</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">    for (focus = head; focus != NULL; focus = focus-&gt;next)</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keyword">struct </span><a class="code" href="structsllistnode.html">sllistnode</a> *<a class="code" href="sllist_8h.html#aa58a9bafadb51fca2eede57d6e04f672">free_sllist</a>(<span class="keyword">struct</span> <a class="code" href="structsllistnode.html">sllistnode</a> *head);</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<a class="code" href="mge-portability_8h.html#ac17320fed4b28122bc4977a087b131dd">END_C_DECLS</a></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* ndef SLLIST_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<a class="code" href="mge-portability_8h.html#ac17320fed4b28122bc4977a087b131dd">END_C_DECLS</a></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* ndef SLLIST_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="amge-portability_8h_html"><div class="ttname"><a href="mge-portability_8h.html">mge-portability.h</a></div><div class="ttdoc">Header file to ease portability.</div></div>
-<div class="ttc" id="amge-portability_8h_html_a0c2d4d01206892eecb3fd695f45dec2d"><div class="ttname"><a href="mge-portability_8h.html#a0c2d4d01206892eecb3fd695f45dec2d">BEGIN_C_DECLS</a></div><div class="ttdeci">#define BEGIN_C_DECLS</div><div class="ttdoc">BEGIN_C_DECLS should be used at the beginning of declarations so that C++ compilers don't mangle thei...</div><div class="ttdef"><b>Definition:</b> mge-portability.h:48</div></div>
-<div class="ttc" id="amge-portability_8h_html_ac17320fed4b28122bc4977a087b131dd"><div class="ttname"><a href="mge-portability_8h.html#ac17320fed4b28122bc4977a087b131dd">END_C_DECLS</a></div><div class="ttdeci">#define END_C_DECLS</div><div class="ttdoc">Use END_C_DECLS at the end of C declarations.</div><div class="ttdef"><b>Definition:</b> mge-portability.h:52</div></div>
-<div class="ttc" id="asllist_8h_html_a1356c5e949848b0ef93f55b370e06fde"><div class="ttname"><a href="sllist_8h.html#a1356c5e949848b0ef93f55b370e06fde">add_head_sll_node</a></div><div class="ttdeci">struct sllistnode * add_head_sll_node(struct sllistnode *head, const void *object, size_t objsize)</div><div class="ttdoc">Add a node to the start of the singly linked list.</div><div class="ttdef"><b>Definition:</b> sllist.c:71</div></div>
-<div class="ttc" id="asllist_8h_html_a654fb653880c80a6826074470046eaea"><div class="ttname"><a href="sllist_8h.html#a654fb653880c80a6826074470046eaea">find_sll_node</a></div><div class="ttdeci">void * find_sll_node(struct sllistnode *head, const void *searchobj, int(*comp)(const void *, const void *))</div><div class="ttdoc">Find a node.</div><div class="ttdef"><b>Definition:</b> sllist.c:161</div></div>
-<div class="ttc" id="asllist_8h_html_a7ac0d7abf119f976b6576674e5b2125c"><div class="ttname"><a href="sllist_8h.html#a7ac0d7abf119f976b6576674e5b2125c">find_next_sll_node</a></div><div class="ttdeci">static struct sllistnode * find_next_sll_node(struct sllistnode *focus)</div><div class="ttdoc">Find the next node in the list.</div><div class="ttdef"><b>Definition:</b> sllist.h:73</div></div>
-<div class="ttc" id="asllist_8h_html_aa58a9bafadb51fca2eede57d6e04f672"><div class="ttname"><a href="sllist_8h.html#aa58a9bafadb51fca2eede57d6e04f672">free_sllist</a></div><div class="ttdeci">struct sllistnode * free_sllist(struct sllistnode *head)</div><div class="ttdoc">Free the entire list.</div><div class="ttdef"><b>Definition:</b> sllist.c:186</div></div>
-<div class="ttc" id="asllist_8h_html_aadd80af2686ad022c8d6039db6335e4f"><div class="ttname"><a href="sllist_8h.html#aadd80af2686ad022c8d6039db6335e4f">add_tail_sll_node</a></div><div class="ttdeci">struct sllistnode * add_tail_sll_node(struct sllistnode *head, const void *object, size_t objsize)</div><div class="ttdoc">Add a node to the tail of the singly linked list.</div><div class="ttdef"><b>Definition:</b> sllist.c:111</div></div>
-<div class="ttc" id="astructsllistnode_html"><div class="ttname"><a href="structsllistnode.html">sllistnode</a></div><div class="ttdoc">Singly linked list node.</div><div class="ttdef"><b>Definition:</b> sllist.h:53</div></div>
-<div class="ttc" id="astructsllistnode_html_a077376d12464f945e2414d5499c79b3f"><div class="ttname"><a href="structsllistnode.html#a077376d12464f945e2414d5499c79b3f">sllistnode::object</a></div><div class="ttdeci">void * object</div><div class="ttdoc">Attached object.</div><div class="ttdef"><b>Definition:</b> sllist.h:54</div></div>
-<div class="ttc" id="astructsllistnode_html_a700fc56f215d3482e760ff98df3d5091"><div class="ttname"><a href="structsllistnode.html#a700fc56f215d3482e760ff98df3d5091">sllistnode::next</a></div><div class="ttdeci">struct sllistnode * next</div><div class="ttdoc">The subsequent node.</div><div class="ttdef"><b>Definition:</b> sllist.h:55</div></div>
+<div class="ttc" id="amge-portability_8h_html_a0c2d4d01206892eecb3fd695f45dec2d"><div class="ttname"><a href="mge-portability_8h.html#a0c2d4d01206892eecb3fd695f45dec2d">BEGIN_C_DECLS</a></div><div class="ttdeci">#define BEGIN_C_DECLS</div><div class="ttdoc">BEGIN_C_DECLS should be used at the beginning of declarations so that C++ compilers don't mangle thei...</div><div class="ttdef"><b>Definition:</b> mge-portability.h:30</div></div>
+<div class="ttc" id="amge-portability_8h_html_ac17320fed4b28122bc4977a087b131dd"><div class="ttname"><a href="mge-portability_8h.html#ac17320fed4b28122bc4977a087b131dd">END_C_DECLS</a></div><div class="ttdeci">#define END_C_DECLS</div><div class="ttdoc">Use END_C_DECLS at the end of C declarations.</div><div class="ttdef"><b>Definition:</b> mge-portability.h:34</div></div>
+<div class="ttc" id="asllist_8h_html_a1356c5e949848b0ef93f55b370e06fde"><div class="ttname"><a href="sllist_8h.html#a1356c5e949848b0ef93f55b370e06fde">add_head_sll_node</a></div><div class="ttdeci">struct sllistnode * add_head_sll_node(struct sllistnode *head, const void *object, size_t objsize)</div><div class="ttdoc">Add a node to the start of the singly linked list.</div><div class="ttdef"><b>Definition:</b> sllist.c:35</div></div>
+<div class="ttc" id="asllist_8h_html_a654fb653880c80a6826074470046eaea"><div class="ttname"><a href="sllist_8h.html#a654fb653880c80a6826074470046eaea">find_sll_node</a></div><div class="ttdeci">void * find_sll_node(struct sllistnode *head, const void *searchobj, int(*comp)(const void *, const void *))</div><div class="ttdoc">Find a node.</div><div class="ttdef"><b>Definition:</b> sllist.c:125</div></div>
+<div class="ttc" id="asllist_8h_html_a7ac0d7abf119f976b6576674e5b2125c"><div class="ttname"><a href="sllist_8h.html#a7ac0d7abf119f976b6576674e5b2125c">find_next_sll_node</a></div><div class="ttdeci">static struct sllistnode * find_next_sll_node(struct sllistnode *focus)</div><div class="ttdoc">Find the next node in the list.</div><div class="ttdef"><b>Definition:</b> sllist.h:46</div></div>
+<div class="ttc" id="asllist_8h_html_aa58a9bafadb51fca2eede57d6e04f672"><div class="ttname"><a href="sllist_8h.html#aa58a9bafadb51fca2eede57d6e04f672">free_sllist</a></div><div class="ttdeci">struct sllistnode * free_sllist(struct sllistnode *head)</div><div class="ttdoc">Free the entire list.</div><div class="ttdef"><b>Definition:</b> sllist.c:150</div></div>
+<div class="ttc" id="asllist_8h_html_aadd80af2686ad022c8d6039db6335e4f"><div class="ttname"><a href="sllist_8h.html#aadd80af2686ad022c8d6039db6335e4f">add_tail_sll_node</a></div><div class="ttdeci">struct sllistnode * add_tail_sll_node(struct sllistnode *head, const void *object, size_t objsize)</div><div class="ttdoc">Add a node to the tail of the singly linked list.</div><div class="ttdef"><b>Definition:</b> sllist.c:75</div></div>
+<div class="ttc" id="astructsllistnode_html"><div class="ttname"><a href="structsllistnode.html">sllistnode</a></div><div class="ttdoc">Singly linked list node.</div><div class="ttdef"><b>Definition:</b> sllist.h:26</div></div>
+<div class="ttc" id="astructsllistnode_html_a077376d12464f945e2414d5499c79b3f"><div class="ttname"><a href="structsllistnode.html#a077376d12464f945e2414d5499c79b3f">sllistnode::object</a></div><div class="ttdeci">void * object</div><div class="ttdoc">Attached object.</div><div class="ttdef"><b>Definition:</b> sllist.h:27</div></div>
+<div class="ttc" id="astructsllistnode_html_a700fc56f215d3482e760ff98df3d5091"><div class="ttname"><a href="structsllistnode.html#a700fc56f215d3482e760ff98df3d5091">sllistnode::next</a></div><div class="ttdeci">struct sllistnode * next</div><div class="ttdoc">The subsequent node.</div><div class="ttdef"><b>Definition:</b> sllist.h:28</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

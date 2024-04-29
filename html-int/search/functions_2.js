@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['deconstruct_5fmsg_185',['deconstruct_msg',['../message_8c.html#a2125d2bf942ec7739238ca700879935c',1,'message.c']]],
-  ['del_5fbst_186',['del_bst',['../mge-bstree_8h.html#aef02c9547b4c46ca56ddf7fa79046dda',1,'del_bst(struct bstree *tree):&#160;bstree.c'],['../bstree_8c.html#aef02c9547b4c46ca56ddf7fa79046dda',1,'del_bst(struct bstree *tree):&#160;bstree.c']]],
-  ['del_5fbst_5fnode_187',['del_bst_node',['../mge-bstree_8h.html#a54a009d4d10be3cfaeef8cd0933a8993',1,'del_bst_node(struct bstree *tree, const void *searchobj):&#160;bstree.c'],['../bstree_8c.html#a54a009d4d10be3cfaeef8cd0933a8993',1,'del_bst_node(struct bstree *tree, const void *searchobj):&#160;bstree.c']]],
-  ['del_5fnode_188',['del_node',['../bstree_8c.html#ad28df34dcb13229f2c86e770859b3337',1,'bstree.c']]]
+  ['clear_5fmsg_181',['clear_msg',['../mge-message_8h.html#a0540546fe564b51dbccd55ba0f86ea2f',1,'clear_msg(struct mgemessage *msg, const char terminator, const char separator):&#160;message.c'],['../message_8c.html#a0540546fe564b51dbccd55ba0f86ea2f',1,'clear_msg(struct mgemessage *msg, const char terminator, const char separator):&#160;message.c']]],
+  ['concat_5fbuf_182',['concat_buf',['../mge-buffer_8h.html#a84f0acd02cc1377f3fa2e3ac9c3b9ec2',1,'concat_buf(const char *s_buf, const size_t s_buf_os, struct mgebuffer *m_buf):&#160;buffer.c'],['../buffer_8c.html#a84f0acd02cc1377f3fa2e3ac9c3b9ec2',1,'concat_buf(const char *s_buf, const size_t s_buf_os, struct mgebuffer *m_buf):&#160;buffer.c']]],
+  ['cre_5fbst_183',['cre_bst',['../mge-bstree_8h.html#a99224174bcdfc8d39c7a3aa23d0acf5e',1,'cre_bst(int unique, int(*comp)(const void *, const void *)):&#160;bstree.c'],['../bstree_8c.html#a99224174bcdfc8d39c7a3aa23d0acf5e',1,'cre_bst(int unique, int(*comp)(const void *, const void *)):&#160;bstree.c']]]
 ];

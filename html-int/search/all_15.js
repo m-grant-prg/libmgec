@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['unique_139',['unique',['../structbstree.html#a0efb8e1dc5f53b2e2392c388cc651172',1,'bstree']]],
-  ['upd_5fbst_5fnode_140',['upd_bst_node',['../mge-bstree_8h.html#a012b8ae70029c72eaaf81a0765c0e49a',1,'upd_bst_node(const struct bstree *tree, const void *updobj, size_t objsize):&#160;bstree.c'],['../bstree_8c.html#a012b8ae70029c72eaaf81a0765c0e49a',1,'upd_bst_node(const struct bstree *tree, const void *updobj, size_t objsize):&#160;bstree.c']]],
-  ['upd_5fnode_141',['upd_node',['../bstree_8c.html#a9caaf6a9e36ab5af07e9c46b632a43c0',1,'bstree.c']]]
+  ['terminator_135',['terminator',['../structmgemessage.html#a3532877d52a58d2bfeec4ce963f086a1',1,'mgemessage']]],
+  ['trim_5fbuf_136',['trim_buf',['../mge-buffer_8h.html#adb167a2d1c26596ae70f35c495cf5286',1,'trim_buf(struct mgebuffer *msg_buf):&#160;buffer.c'],['../buffer_8c.html#a39df69216e9e8bf96ab185e3b2d85090',1,'trim_buf(struct mgebuffer *m_buf):&#160;buffer.c']]]
 ];

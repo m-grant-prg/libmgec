@@ -1,12 +1,14 @@
 var searchData=
 [
-  ['childgreater_27',['childgreater',['../structbstreenode.html#a28ae894097a40e06e44ca9b6e8323ef1',1,'bstreenode']]],
-  ['childless_28',['childless',['../structbstreenode.html#aec0da8cf6b35ff35821b84d15ffad906',1,'bstreenode']]],
-  ['clear_5fmsg_29',['clear_msg',['../mge-message_8h.html#a0540546fe564b51dbccd55ba0f86ea2f',1,'clear_msg(struct mgemessage *msg, const char terminator, const char separator):&#160;message.c'],['../message_8c.html#a0540546fe564b51dbccd55ba0f86ea2f',1,'clear_msg(struct mgemessage *msg, const char terminator, const char separator):&#160;message.c']]],
-  ['comp_30',['comp',['../structbstree.html#aafce86f8933c1259fb9698e700d55378',1,'bstree']]],
-  ['complete_31',['complete',['../structmgemessage.html#af6b1fef28954e41d75acf35f76bc8d39',1,'mgemessage']]],
-  ['concat_5fbuf_32',['concat_buf',['../mge-buffer_8h.html#a84f0acd02cc1377f3fa2e3ac9c3b9ec2',1,'concat_buf(const char *s_buf, const size_t s_buf_os, struct mgebuffer *m_buf):&#160;buffer.c'],['../buffer_8c.html#a84f0acd02cc1377f3fa2e3ac9c3b9ec2',1,'concat_buf(const char *s_buf, const size_t s_buf_os, struct mgebuffer *m_buf):&#160;buffer.c']]],
-  ['count_33',['count',['../structbstreenode.html#ad43c3812e6d13e0518d9f8b8f463ffcf',1,'bstreenode::count()'],['../structbstobjcoord.html#ad43c3812e6d13e0518d9f8b8f463ffcf',1,'bstobjcoord::count()']]],
-  ['count_5ftotal_34',['count_total',['../structbstree.html#aacf29526945e0158819de7dc0624412b',1,'bstree']]],
-  ['cre_5fbst_35',['cre_bst',['../mge-bstree_8h.html#a99224174bcdfc8d39c7a3aa23d0acf5e',1,'cre_bst(int unique, int(*comp)(const void *, const void *)):&#160;bstree.c'],['../bstree_8c.html#a99224174bcdfc8d39c7a3aa23d0acf5e',1,'cre_bst(int unique, int(*comp)(const void *, const void *)):&#160;bstree.c']]]
+  ['begin_5fc_5fdecls_17',['BEGIN_C_DECLS',['../mge-portability_8h.html#a0c2d4d01206892eecb3fd695f45dec2d',1,'mge-portability.h']]],
+  ['bst_5fnodes_5fduplicates_18',['BST_NODES_DUPLICATES',['../mge-bstree_8h.html#ab5e3644738fe364d904b7b4c357d0b85',1,'mge-bstree.h']]],
+  ['bst_5fnodes_5funique_19',['BST_NODES_UNIQUE',['../mge-bstree_8h.html#a180030be5dfa39f8e9f9c985d24facfd',1,'mge-bstree.h']]],
+  ['bstobjcoord_20',['bstobjcoord',['../structbstobjcoord.html',1,'']]],
+  ['bstree_21',['bstree',['../structbstree.html',1,'']]],
+  ['bstree_2ec_22',['bstree.c',['../bstree_8c.html',1,'']]],
+  ['bstreenode_23',['bstreenode',['../structbstreenode.html',1,'']]],
+  ['buf_5fmax_5funreach_5fpercent_24',['BUF_MAX_UNREACH_PERCENT',['../buf-msg_2internal_8h.html#aef7265c39900560924efc2ec8249e57a',1,'internal.h']]],
+  ['buf_5funused_5fdef_5fsize_5fmult_25',['BUF_UNUSED_DEF_SIZE_MULT',['../buf-msg_2internal_8h.html#afe1cdd2b075547cfb54a1333cbcfbb70',1,'internal.h']]],
+  ['buffer_26',['buffer',['../structmgebuffer.html#aff2566f4c366b48d73479bef43ee4d2e',1,'mgebuffer']]],
+  ['buffer_2ec_27',['buffer.c',['../buffer_8c.html',1,'']]]
 ];

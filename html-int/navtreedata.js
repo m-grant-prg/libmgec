@@ -30,6 +30,10 @@ var NAVTREE =
       [ "Overview", "md_docs_doxygen_src_150_autotools_internal.html#autotools_overview", null ],
       [ "Bootstrapping The Project", "md_docs_doxygen_src_150_autotools_internal.html#bootstrapping", null ],
       [ "gnulib", "md_docs_doxygen_src_150_autotools_internal.html#gnulib", null ],
+      [ "Header File Naming Considerations", "md_docs_doxygen_src_150_autotools_internal.html#header_naming", [
+        [ "Internal", "md_docs_doxygen_src_150_autotools_internal.html#internal_header_naming", null ],
+        [ "API", "md_docs_doxygen_src_150_autotools_internal.html#api_header_naming", null ]
+      ] ],
       [ "Temporary Headers and Libraries", "md_docs_doxygen_src_150_autotools_internal.html#temporaries", [
         [ "Concept", "md_docs_doxygen_src_150_autotools_internal.html#concept", null ],
         [ "Header Components", "md_docs_doxygen_src_150_autotools_internal.html#header_components", [
@@ -99,7 +103,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"version_8c.html#af0b3a963e96593985ba1aecacd3b012a"
+"version_8c.html#adb87a76221ef78d974c9c89cf1bfa7f4"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

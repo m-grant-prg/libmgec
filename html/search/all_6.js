@@ -1,11 +1,12 @@
 var searchData=
 [
-  ['begin_5fc_5fdecls_14',['BEGIN_C_DECLS',['../mge-portability_8h.html#a0c2d4d01206892eecb3fd695f45dec2d',1,'mge-portability.h']]],
-  ['bst_5fnodes_5fduplicates_15',['BST_NODES_DUPLICATES',['../mge-bstree_8h.html#ab5e3644738fe364d904b7b4c357d0b85',1,'mge-bstree.h']]],
-  ['bst_5fnodes_5funique_16',['BST_NODES_UNIQUE',['../mge-bstree_8h.html#a180030be5dfa39f8e9f9c985d24facfd',1,'mge-bstree.h']]],
-  ['bstree_17',['bstree',['../structbstree.html',1,'']]],
-  ['bstree_2ec_18',['bstree.c',['../bstree_8c.html',1,'']]],
-  ['bstreenode_19',['bstreenode',['../structbstreenode.html',1,'']]],
-  ['buffer_20',['buffer',['../structmgebuffer.html#aff2566f4c366b48d73479bef43ee4d2e',1,'mgebuffer']]],
-  ['buffer_2ec_21',['buffer.c',['../buffer_8c.html',1,'']]]
+  ['add_5fbst_5fnode_6',['add_bst_node',['../mge-bstree_8h.html#a8a0ae362f96ff51f60a04ae54560501f',1,'add_bst_node(struct bstree *tree, const void *object, size_t objsize):&#160;bstree.c'],['../bstree_8c.html#a8a0ae362f96ff51f60a04ae54560501f',1,'add_bst_node(struct bstree *tree, const void *object, size_t objsize):&#160;bstree.c']]],
+  ['add_5fdll_5fnode_7',['add_dll_node',['../dllist_8h.html#a0f5e6a07c0e19ff7fb2441851184b51c',1,'add_dll_node(struct dllistnode *currentnode, const void *object, size_t objsize):&#160;dllist.c'],['../dllist_8c.html#a0f5e6a07c0e19ff7fb2441851184b51c',1,'add_dll_node(struct dllistnode *currentnode, const void *object, size_t objsize):&#160;dllist.c']]],
+  ['add_5fhead_5fsll_5fnode_8',['add_head_sll_node',['../sllist_8h.html#a1356c5e949848b0ef93f55b370e06fde',1,'add_head_sll_node(struct sllistnode *head, const void *object, size_t objsize):&#160;sllist.c'],['../sllist_8c.html#a1356c5e949848b0ef93f55b370e06fde',1,'add_head_sll_node(struct sllistnode *head, const void *object, size_t objsize):&#160;sllist.c']]],
+  ['add_5fnode_9',['add_node',['../bstree_8c.html#a1c8949532ee0169a9faf7a1caf20f062',1,'bstree.c']]],
+  ['add_5ftail_5fsll_5fnode_10',['add_tail_sll_node',['../sllist_8h.html#aadd80af2686ad022c8d6039db6335e4f',1,'add_tail_sll_node(struct sllistnode *head, const void *object, size_t objsize):&#160;sllist.c'],['../sllist_8c.html#aadd80af2686ad022c8d6039db6335e4f',1,'add_tail_sll_node(struct sllistnode *head, const void *object, size_t objsize):&#160;sllist.c']]],
+  ['argc_11',['argc',['../structmgemessage.html#ad1447518f4372828b8435ae82e48499e',1,'mgemessage']]],
+  ['args_12',['args',['../message_8c.html#a1bd7a8575ca2650132d636d65dcda2f6',1,'message.c']]],
+  ['argv_13',['argv',['../structmgemessage.html#af2efa898e9eed6fe6715279cb1ec35b0',1,'mgemessage']]],
+  ['array_5fsize_14',['ARRAY_SIZE',['../libmgec_8h.html#a6242a25f9d996f0cc4f4cdb911218b75',1,'libmgec.h']]]
 ];

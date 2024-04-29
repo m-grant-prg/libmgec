@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MGE General C Library - Full Internal Documentation
-   &#160;<span id="projectnumber">v1.8.1</span>
+   &#160;<span id="projectnumber">v1.8.2</span>
    </div>
    <div id="projectbrief">Library of general C functions.</div>
   </td>
@@ -126,12 +126,9 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a95ac1a4f0e3b759282fbab9650ad9927"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libmgec_8h.html#a95ac1a4f0e3b759282fbab9650ad9927">libmgec_get_pkg_version</a> (void)</td></tr>
-<tr class="memdesc:a95ac1a4f0e3b759282fbab9650ad9927"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the git-describe based package version.  <a href="libmgec_8h.html#a95ac1a4f0e3b759282fbab9650ad9927">More...</a><br /></td></tr>
-<tr class="separator:a95ac1a4f0e3b759282fbab9650ad9927"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c3a82f5a4d2d20b5a3b9902dbc36610"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libmgec_8h.html#a2c3a82f5a4d2d20b5a3b9902dbc36610">libmgec_get_src_version</a> (void)</td></tr>
-<tr class="memdesc:a2c3a82f5a4d2d20b5a3b9902dbc36610"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the source version.  <a href="libmgec_8h.html#a2c3a82f5a4d2d20b5a3b9902dbc36610">More...</a><br /></td></tr>
-<tr class="separator:a2c3a82f5a4d2d20b5a3b9902dbc36610"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1f6a5fa068da4b54d854bc56affc54c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libmgec_8h.html#ab1f6a5fa068da4b54d854bc56affc54c">__attribute__</a> ((const)) const char *libmgec_get_pkg_version(void)</td></tr>
+<tr class="memdesc:ab1f6a5fa068da4b54d854bc56affc54c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the source version.  <a href="libmgec_8h.html#ab1f6a5fa068da4b54d854bc56affc54c">More...</a><br /></td></tr>
+<tr class="separator:ab1f6a5fa068da4b54d854bc56affc54c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0b3a963e96593985ba1aecacd3b012a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libmgec_8h.html#af0b3a963e96593985ba1aecacd3b012a">libmgec_print_pkg_version</a> (void)</td></tr>
 <tr class="memdesc:af0b3a963e96593985ba1aecacd3b012a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print the package version string to stdout.  <a href="libmgec_8h.html#af0b3a963e96593985ba1aecacd3b012a">More...</a><br /></td></tr>
 <tr class="separator:af0b3a963e96593985ba1aecacd3b012a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -141,10 +138,10 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Header file for the libmgec shared library. </p>
-<dl class="section author"><dt>Author</dt><dd>Copyright (C) 2015-2019, 2021, 2022 Mark Grant</dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Copyright (C) 2015-2019, 2021-2023 Mark Grant</dd></dl>
 <p>Released under the GPLv3 only.<br  />
 SPDX-License-Identifier: GPL-3.0-only</p>
-<dl class="section version"><dt>Version</dt><dd><em>v1.0.8 ==== 16/09/2022</em> </dd></dl>
+<dl class="section version"><dt>Version</dt><dd><em>v1.1.1 ==== 24/11/2023</em> </dd></dl>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a6242a25f9d996f0cc4f4cdb911218b75"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6242a25f9d996f0cc4f4cdb911218b75">&#9670;&nbsp;</a></span>ARRAY_SIZE</h2>
@@ -167,45 +164,28 @@ SPDX-License-Identifier: GPL-3.0-only</p>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a95ac1a4f0e3b759282fbab9650ad9927"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a95ac1a4f0e3b759282fbab9650ad9927">&#9670;&nbsp;</a></span>libmgec_get_pkg_version()</h2>
+<a id="ab1f6a5fa068da4b54d854bc56affc54c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1f6a5fa068da4b54d854bc56affc54c">&#9670;&nbsp;</a></span>__attribute__()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">char* libmgec_get_pkg_version </td>
+          <td class="memname">__attribute__ </td>
           <td>(</td>
-          <td class="paramtype">void&#160;</td>
+          <td class="paramtype">(const)&#160;</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get the git-describe based package version. </p>
-<dl class="section return"><dt>Returns</dt><dd>The package version string. </dd></dl>
-
-</div>
-</div>
-<a id="a2c3a82f5a4d2d20b5a3b9902dbc36610"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2c3a82f5a4d2d20b5a3b9902dbc36610">&#9670;&nbsp;</a></span>libmgec_get_src_version()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">char* libmgec_get_src_version </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Get the source version. </p>
-<dl class="section return"><dt>Returns</dt><dd>The source version string. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The source version string.</dd></dl>
+<p>Get the source version.</p>
+<dl class="section return"><dt>Returns</dt><dd>The package version string.</dd>
+<dd>
+The source version string. </dd></dl>
 
 </div>
 </div>

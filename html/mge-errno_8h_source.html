@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MGE General C Library - API Documentation
-   &#160;<span id="projectnumber">v1.8.1</span>
+   &#160;<span id="projectnumber">v1.8.2</span>
    </div>
    <div id="projectbrief">Library of general C functions.</div>
   </td>
@@ -88,71 +88,45 @@ $(document).ready(function(){initNavTree('mge-errno_8h_source.html',''); initRes
 </div><!--header-->
 <div class="contents">
 <a href="mge-errno_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">/* **********************************************************************</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> *                                  *</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * Changelog                                *</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> *                                  *</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> * Date     Author  Version Description             *</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> *                                  *</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> * 23/01/2017   MG  1.0.1   First release.              *</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> * 29/01/2017   MG  1.0.2   Add getaddrinfo related errors. Remove  *</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> *              unnecessary _ERR suffix.        *</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> * 03/02/2017   MG  1.0.3   Add config file errors.         *</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"> * 08/02/2017   MG  1.0.4   Add message errors.         *</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment"> * 28/09/2017   MG  1.0.5   Add SSH error.              *</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"> * 04/11/2017   MG  1.0.6   Add Doxygen comments.           *</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"> * 09/11/2017   MG  1.0.7   Add SPDX license tag.           *</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment"> * 02/01/2018   MG  1.0.8   Move to new source directory structure. *</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment"> * 31/01/2018   MG  1.0.9   Add Lock not found.         *</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment"> * 17/05/2018   MG  1.0.10  Add Client blocked.         *</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment"> * 08/06/2019   MG  1.0.11  clang-format coding style changes.  *</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment"> * 12/03/2020   MG  1.0.12  Add identification error.       *</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment"> * 03/12/2021   MG  1.0.13  Tighten SPDX tag.           *</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment"> * 14/04/2022   MG  1.0.14  Add MGE_PROTO and MGE_GENERAL.      *</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment"> * 16/09/2022   MG  1.0.15  Rename of portability.h         *</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment"> *                                  *</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment"> ************************************************************************</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#ifndef MGE_ERRNO_H</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#define MGE_ERRNO_H</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#include &lt;sys/types.h&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#ifndef MGE_ERRNO_H</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#define MGE_ERRNO_H</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;sys/types.h&gt;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="mge-portability_8h.html">libmgec/mge-portability.h</a>&gt;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<a class="code" href="mge-portability_8h.html#a0c2d4d01206892eecb3fd695f45dec2d">BEGIN_C_DECLS</a></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">int</span> <a class="code" href="mge-errno_8h.html#a4a252afc0f63a2e93041fac39048678a">mge_errno</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">int</span> <a class="code" href="mge-errno_8h.html#aca21acb62828e1585d26cd8fe9ea3f56">sav_errno</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">/* mge_errno values. */</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="mge-errno_8h.html#a14fbe2084e7a6077a91baf28f573a034">   29</a></span>&#160;<span class="preprocessor">#define MGE_ERRNO 1       </span></div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="mge-errno_8h.html#a582599c3e2cf2f7ce3f04c6f42e74d9f">   30</a></span>&#160;<span class="preprocessor">#define MGE_GAI 2         </span></div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="mge-errno_8h.html#a1dd70a313e8531e6cb2dd52fb11868bc">   31</a></span>&#160;<span class="preprocessor">#define MGE_GAI_BIND 3        </span></div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="mge-errno_8h.html#acdcb3f533d5064d5ba56a299f1a26eab">   32</a></span>&#160;<span class="preprocessor">#define MGE_PARAM 4       </span></div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="mge-errno_8h.html#a2d04bc2d31063f1d2d3d96494725ff43">   33</a></span>&#160;<span class="preprocessor">#define MGE_DUPLICATE_NODE 5  </span></div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="mge-errno_8h.html#a8f10d59c086a2607a5e52a9a79c4d317">   34</a></span>&#160;<span class="preprocessor">#define MGE_NODE_NOT_FOUND 6  </span></div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="mge-errno_8h.html#a548cceba51b84017b2ac322f71abb890">   35</a></span>&#160;<span class="preprocessor">#define MGE_CONFIG_PARAM 7    </span></div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="mge-errno_8h.html#a8aae7f7daf6822a18ad40dacfd958762">   36</a></span>&#160;<span class="preprocessor">#define MGE_CONFIG_PARSE 8    </span></div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="mge-errno_8h.html#acd20409e20c90e1d599ae69d22533d7f">   37</a></span>&#160;<span class="preprocessor">#define MGE_INVAL_MSG 9       </span></div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="mge-errno_8h.html#a5c2ee1e3995447a3e0401638423bf0af">   38</a></span>&#160;<span class="preprocessor">#define MGE_SSH 10        </span></div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="mge-errno_8h.html#aab83d4ea8a1b479fd0adec2151cb5679">   39</a></span>&#160;<span class="preprocessor">#define MGE_LOCK_NOT_FOUND 11 </span></div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="mge-errno_8h.html#a90defc9e20a7fc7995b6144cdd3caf77">   40</a></span>&#160;<span class="preprocessor">#define MGE_CLIENT_BLOCKED 12 </span></div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="mge-errno_8h.html#a7e755f6eef950aa13c03c3ae1f86de18">   41</a></span>&#160;<span class="preprocessor">#define MGE_ID 13         </span></div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="mge-errno_8h.html#a58b5a4e3a77b6b63b7dad5f4c62d1dc2">   42</a></span>&#160;<span class="preprocessor">#define MGE_PROTO 14          </span></div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="mge-errno_8h.html#a3c734d540b6e9d76ce350c6afbaa472b">   43</a></span>&#160;<span class="preprocessor">#define MGE_GENERAL 15        </span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="mge-errno_8h.html#ad662b362519a8e8f9caf7c6462c38e37">mge_strerror</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> mge_err);</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="mge-portability_8h.html">libmgec/mge-portability.h</a>&gt;</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<a class="code" href="mge-portability_8h.html#ac17320fed4b28122bc4977a087b131dd">END_C_DECLS</a></div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<a class="code" href="mge-portability_8h.html#a0c2d4d01206892eecb3fd695f45dec2d">BEGIN_C_DECLS</a></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">int</span> <a class="code" href="mge-errno_8h.html#a4a252afc0f63a2e93041fac39048678a">mge_errno</a>;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">int</span> <a class="code" href="mge-errno_8h.html#aca21acb62828e1585d26cd8fe9ea3f56">sav_errno</a>;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">/* mge_errno values. */</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="mge-errno_8h.html#a14fbe2084e7a6077a91baf28f573a034">   55</a></span>&#160;<span class="preprocessor">#define MGE_ERRNO 1       </span></div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="mge-errno_8h.html#a582599c3e2cf2f7ce3f04c6f42e74d9f">   56</a></span>&#160;<span class="preprocessor">#define MGE_GAI 2         </span></div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="mge-errno_8h.html#a1dd70a313e8531e6cb2dd52fb11868bc">   57</a></span>&#160;<span class="preprocessor">#define MGE_GAI_BIND 3        </span></div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="mge-errno_8h.html#acdcb3f533d5064d5ba56a299f1a26eab">   58</a></span>&#160;<span class="preprocessor">#define MGE_PARAM 4       </span></div>
-<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="mge-errno_8h.html#a2d04bc2d31063f1d2d3d96494725ff43">   59</a></span>&#160;<span class="preprocessor">#define MGE_DUPLICATE_NODE 5  </span></div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="mge-errno_8h.html#a8f10d59c086a2607a5e52a9a79c4d317">   60</a></span>&#160;<span class="preprocessor">#define MGE_NODE_NOT_FOUND 6  </span></div>
-<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="mge-errno_8h.html#a548cceba51b84017b2ac322f71abb890">   61</a></span>&#160;<span class="preprocessor">#define MGE_CONFIG_PARAM 7    </span></div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="mge-errno_8h.html#a8aae7f7daf6822a18ad40dacfd958762">   62</a></span>&#160;<span class="preprocessor">#define MGE_CONFIG_PARSE 8    </span></div>
-<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="mge-errno_8h.html#acd20409e20c90e1d599ae69d22533d7f">   63</a></span>&#160;<span class="preprocessor">#define MGE_INVAL_MSG 9       </span></div>
-<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="mge-errno_8h.html#a5c2ee1e3995447a3e0401638423bf0af">   64</a></span>&#160;<span class="preprocessor">#define MGE_SSH 10        </span></div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="mge-errno_8h.html#aab83d4ea8a1b479fd0adec2151cb5679">   65</a></span>&#160;<span class="preprocessor">#define MGE_LOCK_NOT_FOUND 11 </span></div>
-<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="mge-errno_8h.html#a90defc9e20a7fc7995b6144cdd3caf77">   66</a></span>&#160;<span class="preprocessor">#define MGE_CLIENT_BLOCKED 12 </span></div>
-<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="mge-errno_8h.html#a7e755f6eef950aa13c03c3ae1f86de18">   67</a></span>&#160;<span class="preprocessor">#define MGE_ID 13         </span></div>
-<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="mge-errno_8h.html#a58b5a4e3a77b6b63b7dad5f4c62d1dc2">   68</a></span>&#160;<span class="preprocessor">#define MGE_PROTO 14          </span></div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="mge-errno_8h.html#a3c734d540b6e9d76ce350c6afbaa472b">   69</a></span>&#160;<span class="preprocessor">#define MGE_GENERAL 15        </span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="mge-errno_8h.html#ad662b362519a8e8f9caf7c6462c38e37">mge_strerror</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> mge_err);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<a class="code" href="mge-portability_8h.html#ac17320fed4b28122bc4977a087b131dd">END_C_DECLS</a></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* ndef MGE_ERRNO_H */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="amge-errno_8h_html_a4a252afc0f63a2e93041fac39048678a"><div class="ttname"><a href="mge-errno_8h.html#a4a252afc0f63a2e93041fac39048678a">mge_errno</a></div><div class="ttdeci">BEGIN_C_DECLS int mge_errno</div><div class="ttdoc">Error number.</div><div class="ttdef"><b>Definition:</b> errno.c:53</div></div>
-<div class="ttc" id="amge-errno_8h_html_aca21acb62828e1585d26cd8fe9ea3f56"><div class="ttname"><a href="mge-errno_8h.html#aca21acb62828e1585d26cd8fe9ea3f56">sav_errno</a></div><div class="ttdeci">int sav_errno</div><div class="ttdoc">Used to store errno, gai_errno etc.</div><div class="ttdef"><b>Definition:</b> errno.c:54</div></div>
-<div class="ttc" id="amge-errno_8h_html_ad662b362519a8e8f9caf7c6462c38e37"><div class="ttname"><a href="mge-errno_8h.html#ad662b362519a8e8f9caf7c6462c38e37">mge_strerror</a></div><div class="ttdeci">const char * mge_strerror(const int mge_err)</div><div class="ttdoc">Return a string describing the error number.</div><div class="ttdef"><b>Definition:</b> error.c:52</div></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* ndef MGE_ERRNO_H */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="amge-errno_8h_html_a4a252afc0f63a2e93041fac39048678a"><div class="ttname"><a href="mge-errno_8h.html#a4a252afc0f63a2e93041fac39048678a">mge_errno</a></div><div class="ttdeci">BEGIN_C_DECLS int mge_errno</div><div class="ttdoc">Error number.</div><div class="ttdef"><b>Definition:</b> errno.c:23</div></div>
+<div class="ttc" id="amge-errno_8h_html_aca21acb62828e1585d26cd8fe9ea3f56"><div class="ttname"><a href="mge-errno_8h.html#aca21acb62828e1585d26cd8fe9ea3f56">sav_errno</a></div><div class="ttdeci">int sav_errno</div><div class="ttdoc">Used to store errno, gai_errno etc.</div><div class="ttdef"><b>Definition:</b> errno.c:24</div></div>
+<div class="ttc" id="amge-errno_8h_html_ad662b362519a8e8f9caf7c6462c38e37"><div class="ttname"><a href="mge-errno_8h.html#ad662b362519a8e8f9caf7c6462c38e37">mge_strerror</a></div><div class="ttdeci">const char * mge_strerror(const int mge_err)</div><div class="ttdoc">Return a string describing the error number.</div><div class="ttdef"><b>Definition:</b> error.c:32</div></div>
 <div class="ttc" id="amge-portability_8h_html"><div class="ttname"><a href="mge-portability_8h.html">mge-portability.h</a></div><div class="ttdoc">Header file to ease portability.</div></div>
-<div class="ttc" id="amge-portability_8h_html_a0c2d4d01206892eecb3fd695f45dec2d"><div class="ttname"><a href="mge-portability_8h.html#a0c2d4d01206892eecb3fd695f45dec2d">BEGIN_C_DECLS</a></div><div class="ttdeci">#define BEGIN_C_DECLS</div><div class="ttdoc">BEGIN_C_DECLS should be used at the beginning of declarations so that C++ compilers don't mangle thei...</div><div class="ttdef"><b>Definition:</b> mge-portability.h:48</div></div>
-<div class="ttc" id="amge-portability_8h_html_ac17320fed4b28122bc4977a087b131dd"><div class="ttname"><a href="mge-portability_8h.html#ac17320fed4b28122bc4977a087b131dd">END_C_DECLS</a></div><div class="ttdeci">#define END_C_DECLS</div><div class="ttdoc">Use END_C_DECLS at the end of C declarations.</div><div class="ttdef"><b>Definition:</b> mge-portability.h:52</div></div>
+<div class="ttc" id="amge-portability_8h_html_a0c2d4d01206892eecb3fd695f45dec2d"><div class="ttname"><a href="mge-portability_8h.html#a0c2d4d01206892eecb3fd695f45dec2d">BEGIN_C_DECLS</a></div><div class="ttdeci">#define BEGIN_C_DECLS</div><div class="ttdoc">BEGIN_C_DECLS should be used at the beginning of declarations so that C++ compilers don't mangle thei...</div><div class="ttdef"><b>Definition:</b> mge-portability.h:30</div></div>
+<div class="ttc" id="amge-portability_8h_html_ac17320fed4b28122bc4977a087b131dd"><div class="ttname"><a href="mge-portability_8h.html#ac17320fed4b28122bc4977a087b131dd">END_C_DECLS</a></div><div class="ttdeci">#define END_C_DECLS</div><div class="ttdoc">Use END_C_DECLS at the end of C declarations.</div><div class="ttdef"><b>Definition:</b> mge-portability.h:34</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

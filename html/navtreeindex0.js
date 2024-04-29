@@ -70,11 +70,10 @@ var NAVTREEINDEX0 =
 "index.html":[],
 "index.html":[0],
 "libmgec_8h.html":[6,0,1,0,0,0,0,1],
-"libmgec_8h.html#a2c3a82f5a4d2d20b5a3b9902dbc36610":[6,0,1,0,0,0,0,1,2],
 "libmgec_8h.html#a6242a25f9d996f0cc4f4cdb911218b75":[6,0,1,0,0,0,0,1,0],
-"libmgec_8h.html#a95ac1a4f0e3b759282fbab9650ad9927":[6,0,1,0,0,0,0,1,1],
-"libmgec_8h.html#adb87a76221ef78d974c9c89cf1bfa7f4":[6,0,1,0,0,0,0,1,4],
-"libmgec_8h.html#af0b3a963e96593985ba1aecacd3b012a":[6,0,1,0,0,0,0,1,3],
+"libmgec_8h.html#ab1f6a5fa068da4b54d854bc56affc54c":[6,0,1,0,0,0,0,1,1],
+"libmgec_8h.html#adb87a76221ef78d974c9c89cf1bfa7f4":[6,0,1,0,0,0,0,1,3],
+"libmgec_8h.html#af0b3a963e96593985ba1aecacd3b012a":[6,0,1,0,0,0,0,1,2],
 "libmgec_8h_source.html":[6,0,1,0,0,0,0,1],
 "md_docs_doxygen_src_300_errors.html":[1],
 "md_docs_doxygen_src_300_errors.html#errorfunctions":[1,2],
@@ -204,8 +203,7 @@ var NAVTREEINDEX0 =
 "structsllistnode.html#a077376d12464f945e2414d5499c79b3f":[5,0,5,1],
 "structsllistnode.html#a700fc56f215d3482e760ff98df3d5091":[5,0,5,0],
 "version_8c.html":[6,0,1,0,0,1,0,4],
-"version_8c.html#a2c3a82f5a4d2d20b5a3b9902dbc36610":[6,0,1,0,0,1,0,4,1],
-"version_8c.html#a95ac1a4f0e3b759282fbab9650ad9927":[6,0,1,0,0,1,0,4,0],
-"version_8c.html#adb87a76221ef78d974c9c89cf1bfa7f4":[6,0,1,0,0,1,0,4,3],
-"version_8c.html#af0b3a963e96593985ba1aecacd3b012a":[6,0,1,0,0,1,0,4,2]
+"version_8c.html#a699f6a3da91f9155d09cd12158ed6def":[6,0,1,0,0,1,0,4,0],
+"version_8c.html#adb87a76221ef78d974c9c89cf1bfa7f4":[6,0,1,0,0,1,0,4,2],
+"version_8c.html#af0b3a963e96593985ba1aecacd3b012a":[6,0,1,0,0,1,0,4,1]
 };
