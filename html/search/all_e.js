@@ -28,10 +28,11 @@ var searchData=
   ['mge_5fnode_5fnot_5ffound_94',['MGE_NODE_NOT_FOUND',['../mge-errno_8h.html#a8f10d59c086a2607a5e52a9a79c4d317',1,'mge-errno.h']]],
   ['mge_5fparam_95',['MGE_PARAM',['../mge-errno_8h.html#acdcb3f533d5064d5ba56a299f1a26eab',1,'mge-errno.h']]],
   ['mge_5fproto_96',['MGE_PROTO',['../mge-errno_8h.html#a58b5a4e3a77b6b63b7dad5f4c62d1dc2',1,'mge-errno.h']]],
-  ['mge_5fssh_97',['MGE_SSH',['../mge-errno_8h.html#a5c2ee1e3995447a3e0401638423bf0af',1,'mge-errno.h']]],
-  ['mge_5fstrerror_98',['mge_strerror',['../mge-errno_8h.html#ad662b362519a8e8f9caf7c6462c38e37',1,'mge_strerror(const int mge_err):&#160;error.c'],['../error_8c.html#ad662b362519a8e8f9caf7c6462c38e37',1,'mge_strerror(const int mge_err):&#160;error.c']]],
-  ['mgebuffer_99',['mgebuffer',['../structmgebuffer.html',1,'']]],
-  ['mgebuffer_5finit_100',['MGEBUFFER_INIT',['../mge-buffer_8h.html#a0b97c4f59904c1f7c09c553b2d6590d8',1,'mge-buffer.h']]],
-  ['mgemessage_101',['mgemessage',['../structmgemessage.html',1,'']]],
-  ['mgemessage_5finit_102',['MGEMESSAGE_INIT',['../mge-message_8h.html#ada2cc5500e0a2bfbec36d077762fb94f',1,'mge-message.h']]]
+  ['mge_5fserver_5fblocked_97',['MGE_SERVER_BLOCKED',['../mge-errno_8h.html#ad6fdc59709912fa1cfa17dd043c0d80a',1,'mge-errno.h']]],
+  ['mge_5fssh_98',['MGE_SSH',['../mge-errno_8h.html#a5c2ee1e3995447a3e0401638423bf0af',1,'mge-errno.h']]],
+  ['mge_5fstrerror_99',['mge_strerror',['../mge-errno_8h.html#ad662b362519a8e8f9caf7c6462c38e37',1,'mge_strerror(const int mge_err):&#160;error.c'],['../error_8c.html#ad662b362519a8e8f9caf7c6462c38e37',1,'mge_strerror(const int mge_err):&#160;error.c']]],
+  ['mgebuffer_100',['mgebuffer',['../structmgebuffer.html',1,'']]],
+  ['mgebuffer_5finit_101',['MGEBUFFER_INIT',['../mge-buffer_8h.html#a0b97c4f59904c1f7c09c553b2d6590d8',1,'mge-buffer.h']]],
+  ['mgemessage_102',['mgemessage',['../structmgemessage.html',1,'']]],
+  ['mgemessage_5finit_103',['MGEMESSAGE_INIT',['../mge-message_8h.html#ada2cc5500e0a2bfbec36d077762fb94f',1,'mge-message.h']]]
 ];

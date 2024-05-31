@@ -14,6 +14,7 @@ var mge_errno_8h =
     [ "MGE_NODE_NOT_FOUND", "mge-errno_8h.html#a8f10d59c086a2607a5e52a9a79c4d317", null ],
     [ "MGE_PARAM", "mge-errno_8h.html#acdcb3f533d5064d5ba56a299f1a26eab", null ],
     [ "MGE_PROTO", "mge-errno_8h.html#a58b5a4e3a77b6b63b7dad5f4c62d1dc2", null ],
+    [ "MGE_SERVER_BLOCKED", "mge-errno_8h.html#ad6fdc59709912fa1cfa17dd043c0d80a", null ],
     [ "MGE_SSH", "mge-errno_8h.html#a5c2ee1e3995447a3e0401638423bf0af", null ],
     [ "mge_strerror", "mge-errno_8h.html#ad662b362519a8e8f9caf7c6462c38e37", null ],
     [ "mge_errno", "mge-errno_8h.html#a4a252afc0f63a2e93041fac39048678a", null ],
