@@ -1,8 +1,8 @@
 var message_8c =
 [
     [ "clear_msg", "message_8c.html#a0540546fe564b51dbccd55ba0f86ea2f", null ],
-    [ "deconstruct_msg", "message_8c.html#a2125d2bf942ec7739238ca700879935c", null ],
-    [ "get_msg", "message_8c.html#aa12f32bb998a72d957336b93491e1cac", null ],
+    [ "deconstruct_msg", "message_8c.html#a4f30e7968c8e2e10e6f924c728b2dcbc", null ],
+    [ "get_msg", "message_8c.html#adb8aba28479a767b21ae7fd345022440", null ],
     [ "print_def_msg_values", "message_8c.html#a761d6d3eef1760c999092ee65d277b3a", null ],
     [ "print_msg", "message_8c.html#aded769861a39b0a4c1dfee6c7341fb92", null ],
     [ "pull_msg", "message_8c.html#a41d33ae7dacfcac0c7853faeadab7558", null ],
